@@ -16,8 +16,8 @@ function handleError(err) {
 livereload({ start: true });
 
 gulp.task('static', function() {
-    gulp.src(['./src/js/**/*', './src/img/**/*'], {base: './src/'})
-        .pipe($.watch(['./src/js/**/*', './src/img/**/*']))
+    gulp.src(['./assets/js/**/*', './assets/images/**/*'], {base: './assets/'})
+        .pipe($.watch(['./assets/js/**/*', './assets/images/**/*']))
         .pipe($.plumber({
             errorHandler: handleError
         }))
@@ -26,8 +26,8 @@ gulp.task('static', function() {
 });
 
 gulp.task('styles', function() {
-    gulp.src('./src/css/scss/**/*.scss')
-        .pipe($.watch('./src/css/scss/**/*.scss'))
+    gulp.src('./assets/css/scss/**/*.scss')
+        .pipe($.watch('./assets/css/scss/**/*.scss'))
         .pipe($.plumber({
             errorHandler: handleError
         }))
