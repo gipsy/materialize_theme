@@ -4,185 +4,199 @@ layout = "default"
 description = "about us page"
 is_hidden = 0
 ==
-{% partial "header" %}
+<header>
+  {% partial "navigation" %}
+</header>
+
 <div id="about-us">
-	<div class="container">
-		<div class="slider">
-		    <ul class="slides">
-			    <li>
-			    	<img src="{{ 'assets/images/slider-img1.jpg'|theme }}">
-			        <div class="caption left-align">
-			          <h3 class="black-text">What We Do</h3>
-			          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-			        </div>
-			    </li>
-			    <li>
-			    	<img src="{{ 'assets/images/slider-img2.jpg'|theme }}"><!-- random image -->
-			        <div class="caption left-align">
-			          <h3 class="black-text">Left Aligned Caption</h3>
-			          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-			        </div>
-			    </li>
-			    <li>
-			    	<img src="{{ 'assets/images/slider-img3.jpg'|theme }}"> <!-- random image -->
-			        <div class="caption left-align">
-			          <h3 class="black-text">Right Aligned Caption</h3>
-			          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-			        </div>
-			    </li>
-			    <li>
-			    	<img src="{{ 'assets/images/slider-img4.jpg'|theme }}"> <!-- random image -->
-			        <div class="caption left-align">
-			          <h3 class="black-text">This is our big Tagline!</h3>
-			          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-			        </div>
-			    </li>
-		    </ul>
-		</div>
-		<div class="divider"></div>
-		<h5 class="title-block">FAQs</h5>
-		<div class="faqs-block">
-			<ul class="collapsible">
-			    <li>
-			        <div class="collapsible-header">
-			        	<span class="big-letter">Q</span>Who are we?
-			        	<i class="material-icons show-icon">arrow_drop_up</i>
-			        	<i class="material-icons hide-icon">arrow_drop_down</i>
-			        </div>
-			        <div class="collapsible-body">
-			        	<span class="big-letter position-of-big-letter">A</span>
-			        	<span class="answer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-			        </div>
-			    </li>
-			    <li>
-			        <div class="collapsible-header">
-			        	<span class="big-letter">Q</span>What we do?
-			        	<i class="material-icons show-icon">arrow_drop_up</i>
-			        	<i class="material-icons hide-icon">arrow_drop_down</i>
-			        </div>
-			        <div class="collapsible-body">
-			        	<span class="big-letter position-of-big-letter">A</span>
-			        	<span class="answer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-			        </div>
-			    </li>
-			    <li>
-			        <div class="collapsible-header">
-			        	<span class="big-letter">Q</span>Why we do it?
-			        	<i class="material-icons show-icon">arrow_drop_up</i>
-			        	<i class="material-icons hide-icon">arrow_drop_down</i>
-			        </div>
-			        <div class="collapsible-body">
-			        	<span class="big-letter position-of-big-letter">A</span>
-			        	<span class="answer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-			        </div>
-			    </li>
-			</ul>
-		</div>
-		<div class="divider"></div>
-		<h5 class="title-block">Our Team</h5>
-		<div class="row">
-	        <div class="col s12 m12 offset-m2 l4">
-	            <div class="card">
-	                <div class="card-content black-text">
-	                    <div class="row valign-wrapper custom-row">
-				            <div class="col s3">
-				            	<img class="circle responsive-img" alt="Contact Person" src="{{ 'assets/images/teams-img1.png'|theme }}">
-				            </div>
-				            <div class="col s9">
-				                <span class="black-text">
-				                Blog Author
-				                </span>
-				                <h5>Akira</h5>
-				            </div>
-				        </div>
-	                </div>
-	                <div class="card-action col s9 right">
-	                    <div class="footer-socials">
-					        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-					        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-					        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-					    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col s12 m12 l4">
-	            <div class="card">
-	                <div class="card-content black-text">
-	                    <div class="row valign-wrapper custom-row">
-				            <div class="col s3">
-				            	<img class="circle responsive-img" alt="Contact Person" src="{{ 'assets/images/teams-img1.png'|theme }}">
-				            </div>
-				            <div class="col s9">
-				                <span class="black-text">
-				                Jurnalist
-				                </span>
-				                <h5>Penny</h5>
-				            </div>
-				        </div>
-	                </div>
-	                <div class="card-action col s9 right">
-	                    <div class="footer-socials">
-					        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-					        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-					        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-					    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col s12 m12 l4">
-	            <div class="card">
-	                <div class="card-content black-text">
-	                    <div class="row valign-wrapper custom-row">
-				            <div class="col s3">
-				            	<img class="circle responsive-img" alt="Contact Person" src="{{ 'assets/images/teams-img1.png'|theme }}">
-				            </div>
-				            <div class="col s9">
-				                <span class="black-text">
-				                Designer
-				                </span>
-				                <h5>Bedismo</h5>
-				            </div>
-				        </div>
-	                </div>
-	                <div class="card-action col s9 right">
-	                    <div class="footer-socials">
-					        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-					        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-					        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-					    </div>
-	                </div>
-	            </div>
-	        </div>
+  <div class="container">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="{{ 'assets/images/slider-img1.jpg'|theme }}">
+          <div class="caption left-align">
+            <h3 class="black-text">What We Do</h3>
+            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          </div>
+        </li>
+        <li>
+          <img src="{{ 'assets/images/slider-img2.jpg'|theme }}"><!-- random image -->
+          <div class="caption left-align">
+            <h3 class="black-text">Left Aligned Caption</h3>
+            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          </div>
+        </li>
+        <li>
+          <img src="{{ 'assets/images/slider-img3.jpg'|theme }}"> <!-- random image -->
+          <div class="caption left-align">
+            <h3 class="black-text">Right Aligned Caption</h3>
+            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          </div>
+        </li>
+        <li>
+          <img src="{{ 'assets/images/slider-img4.jpg'|theme }}"> <!-- random image -->
+          <div class="caption left-align">
+            <h3 class="black-text">This is our big Tagline!</h3>
+            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          </div>
+        </li>
+      </ul>
+    </div><! -- end .slider -->
+
+    <div class="divider"></div>
+
+    <h5 class="title-block">FAQs</h5>
+    <div class="faqs-block">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <span class="big-letter">Q</span>Who are we?
+            <i class="material-icons show-icon">arrow_drop_up</i>
+            <i class="material-icons hide-icon">arrow_drop_down</i>
+          </div>
+          <div class="collapsible-body">
+            <span class="big-letter position-of-big-letter">A</span>
+            <span class="answer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="big-letter">Q</span>What we do?
+            <i class="material-icons show-icon">arrow_drop_up</i>
+            <i class="material-icons hide-icon">arrow_drop_down</i>
+          </div>
+          <div class="collapsible-body">
+            <span class="big-letter position-of-big-letter">A</span>
+            <span class="answer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="big-letter">Q</span>Why we do it?
+            <i class="material-icons show-icon">arrow_drop_up</i>
+            <i class="material-icons hide-icon">arrow_drop_down</i>
+          </div>
+          <div class="collapsible-body">
+            <span class="big-letter position-of-big-letter">A</span>
+            <span class="answer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </li>
+      </ul>
+    </div><!-- end .faqs-block -->
+
+    <div class="divider"></div>
+
+    <h5 class="title-block">Our Team</h5>
+    <div class="row">
+      <div class="col s12 m12 offset-m2 l4">
+        <div class="card">
+          <div class="card-content black-text">
+              <div class="row valign-wrapper custom-row">
+                <div class="col s3">
+                  <img class="circle responsive-img" alt="Contact Person" src="{{ 'assets/images/teams-img1.png'|theme }}">
+                </div>
+              <div class="col s9">
+                <span class="black-text">
+                Blog Author
+                </span>
+                <h5>Akira</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-action col s9 right">
+            <div class="footer-socials">
+              <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+        </div><!-- end .card -->
+      </div><!-- end .col -->
+
+      <div class="col s12 m12 l4">
+        <div class="card">
+          <div class="card-content black-text">
+            <div class="row valign-wrapper custom-row">
+              <div class="col s3">
+                <img class="circle responsive-img" alt="Contact Person" src="{{ 'assets/images/teams-img1.png'|theme }}">
+              </div>
+              <div class="col s9">
+                <span class="black-text">
+                Jurnalist
+                </span>
+                <h5>Penny</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-action col s9 right">
+            <div class="footer-socials">
+              <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+        </div><!-- end .card -->
+      </div><!-- end .col -->
+
+      <div class="col s12 m12 l4">
+        <div class="card">
+          <div class="card-content black-text">
+            <div class="row valign-wrapper custom-row">
+              <div class="col s3">
+                <img class="circle responsive-img" alt="Contact Person" src="{{ 'assets/images/teams-img1.png'|theme }}">
+              </div>
+              <div class="col s9">
+                <span class="black-text">
+                Designer
+                </span>
+                <h5>Bedismo</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="divider"></div>
-		<h5 class="title-block">Send Us a Word</h5>
-		<div class="row">
-			<div class="form-background col s12">
-			    <form>
-			        <div class="row">
-				        <div class="input-field col s6">
-				        	<input id="name" type="text" class="validate">
-				            <label for="name">Name</label>
-				        </div>
-				        <div class="input-field col s6">
-				            <input id="password" type="password" class="validate">
-			                <label for="password">Password</label>
-				        </div>
-			        </div>
-				    <div class="row">
-				        <div class="input-field col s12">
-				           <textarea id="textarea1" class="materialize-textarea"></textarea>
-	                       <label for="textarea1">Message</label>
-				        </div>
-				    </div>
-				    <div class="row">
-				        <div class="col s12">
-				           <a class="waves-effect waves-light btn right">Send</a>
-				        </div>
-				    </div>
-			    </form>
-		    </div>
-		</div>
-	</div>
-</div>
+        <div class="card-action col s9 right">
+          <div class="footer-socials">
+            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+          </div>
+        </div><!-- end .card -->
+      </div><!-- end .col -->
+    </div><!-- end .row -->
+
+    <div class="divider"></div>
+
+    <h5 class="title-block">Send Us a Word</h5>
+    <div class="row">
+      <div class="form-background col s12">
+        <form>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Message</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn right">Send</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</div><!-- end #about-us -->
+
 {% partial "footer" %}
