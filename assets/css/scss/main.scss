@@ -8,17 +8,647 @@ html, body {
 
 body {
     min-width: 320px;
+    background-color: #f2f2f2;
 }
-
+.home-content, #about-us {
+    margin-bottom: 130px;
+}
+.divider { margin-top: 65px; }
+.material-icons { width: 24px; height: 24px; }
+img { vertical-align: middle; }
+.none-text-transform { text-transform: none !important; margin-right: 0 !important; }
+.custom-row { margin-bottom: 0; }
+.row-reset-margin { margin-left: 0 !important; margin-right: 0 !important; }
+.reset-padding-left-right { padding-left: 0 !important; padding-right: 0 !important; }
+// H E A D E R
 header {
-    background-color: #273238;
-    height: 300px;
+    background-color: transparent;
+    .navbar-fixed {
+
+    }
+    .flip, .panel {
+            margin: 0px;
+            text-align: center;
+        }
+        .panel {
+            width: 100%;
+            height: 0px;
+            display: none;
+            position: absolute;
+            background-color: white;
+            top: 63px;
+            left: 0;
+            @media #{$small-and-down} {
+                top: 56px;
+            }
+            .input-field {
+                margin-top: 100px; 
+                i {
+                    color: #039be6;
+                }
+                .validate {
+                    border-bottom: 1px solid #7f7f7f;
+                }
+                .clearable{
+                    background: #fff url("../images/ic_clear_black.png") no-repeat right -20px center;
+                    padding: 3px 25px 3px 4px;     /* Use the same right padding (18) in jQ! */
+                    transition: background 0.4s;
+                    box-sizing: border-box;
+                }
+                .clearable.x  { background-position: right 5px center; } /* (jQ) Show icon */
+                .clearable.onX{ cursor: pointer; }              /* (jQ) hover cursor style */
+                .clearable::-ms-clear {display: none; width:0; height:0;} /* Remove IE default X */
+                label {
+                    color: black;
+                }
+            }
+        }
+        .is-active {
+            height: 300px;
+            display: block;
+            transition-property: height;
+        }
+    nav {
+    	background-color: $blue-lighten-6;
+    	.dropdown-content.active {
+    		top: none !important;
+    		background-color: $blue-lighten-6;
+    		color: white;
+    		li {
+    			a {
+    				color: white;
+    				font-size: 1rem;
+    			}
+    		}
+    	}
+    	ul li.active {
+    		background-color: $blue-lighten-7;
+    	}
+    	.icons-small-device {
+    		li {
+    			&:hover,
+            	&:active {
+    			    background-color: $blue-lighten-7;    		    }
+    		    i {
+    		    	@media #{$small-and-down} {
+		    			height: 56px;
+		    			line-height: 56px;
+		            }
+
+    		    }
+    		}
+    	}
+    	.nav-on-hover {
+    		li {
+    			&:hover,
+            	&:active {
+    			    background-color: $blue-lighten-7;
+    		    }
+    		}
+    	}
+    	.side-nav {
+    		background-color: $blue-lighten-6;
+    		@media #{$small-and-down} {
+    			top: 56px;
+            }
+            @media #{$medium-and-up} {
+            	top: 64px;
+            }
+            li {
+            	&:hover,
+            	&:active {
+    				background-color: $blue-lighten-7;
+    			}
+    			a { color: white; }
+            }
+            #collapsible {
+                li {
+                    background-color: $blue-lighten-6;
+                    padding: 0;
+                    &:hover {
+                        background-color: $blue-lighten-7;
+                    }
+                    &:active {
+                        background-color: $blue-lighten-6;
+                    }
+                }
+                .collapsible-header {
+                    position: relative;
+                    .material-icons {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+    		 
+    	}
+    }
 }
 
-nav {
-    box-shadow: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    border-bottom: 1px solid #424d53;
+//F O O T E R
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    opacity: 0.9;
+    z-index: 200;
+    .footer-socials {
+        position: relative;
+        top: 5px;
+        .btn-floating.btn-large {
+            width: 36px;
+            height: 36px;
+            margin: 0 5px;
+            i {
+                line-height: 36px;
+                font-size: 1.3rem;
+                vertical-align: top;
+            }
+        }
+        .fa-facebook {
+            color: #704fe6;
+        }
+        .fa-twitter {
+            color: #58aeeb;
+        }
+        .fa-instagram {
+            color: #40719a;
+        }
+    }
+    .red-favorite {
+        color: red;
+        vertical-align: middle;
+        font-size: 17px;
+    }
+    .apps-white {
+        color: white;
+        line-height: 45px;
+    }
+    form {
+        .input-field {
+            margin-top: 5px;
+            input {
+                height: 2rem;
+                color: #7f7f7f;
+                max-width: 320px;
+                @media #{$medium-and-down} {
+                    max-width: 500px;
+                    min-width: 170px;
+                }
+                @media #{$large-and-up} {
+                    min-width: 170px;
+                    max-width: 500px;
+                }
+            } 
+        }
+        .btn-flat {
+            line-height: 45px;
+            height: 45px;
+            padding: 0 1rem;
+        }
+    }
+    span {
+        line-height: 45px;
+        color: white;
+        display: block;
+    }
+    .btn-scroll {
+        position: absolute;
+        right: 57px;
+        top: -25px;
+        height: 56px;
+        width: 56px;
+        i {
+            line-height: 56px;
+            font-size: 1.8rem;
+        }
+    }
+}
+#modal2 {
+    .footer-half {
+        @media #{$medium-and-up} {
+            height: 100%;
+            max-height: 550px;
+        }
+        @media #{$small-and-down} {
+            height: 100%;
+            max-height: 1100px;
+        }
+        width: 100%;
+        margin-bottom: 20px;
+        .card {
+            box-shadow: none;
+            .card-action {
+                border-top: 0;
+            }
+            .blue-lighten-9 {
+                min-width: 1.7rem;
+                padding: 0;
+            }
+        }
+    }
 }
 
+
+// H O M E  S C S S
+.slider {
+    .indicators {
+        bottom: 60px;
+        z-index: 100;
+        .indicator-item {
+            background: url("../images/indicator-items.png") 0 -15px no-repeat;
+            width: 14px;
+            height: 14px;
+            background-color: transparent;
+        }
+        .indicator-item.active {
+            background: url("../images/indicator-items.png") 0 0px no-repeat;
+            width: 14px;
+            height: 14px;
+            background-color: transparent;
+        }
+    }
+    .slides {
+        li {
+            .caption {
+                width: 35%;
+                a {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            }
+        }
+    }
+}
+// C O L L A P S I B L E  S H O W / H I D E  A R R O W S
+.collapsible-header {
+    .show-icon {
+        display: block;
+    }
+    .hide-icon {
+        display: none;
+    }
+}
+.collapsible-header.active {
+    .hide-icon {
+        display: block !important;
+    }
+    .show-icon {
+        display: none;
+    }
+}
+
+// B A D G E S , C H I P S  A N D  C A R D S
+span.badge.new {
+    display: inline-block;
+    position: inherit;
+    padding: 0 15px;
+    line-height: 24px;
+    &:after {
+        content: "";
+    }
+}
+.card {
+    margin: 0;
+    &:hover {
+        @extend .z-depth-3
+    }
+    .badges {
+        .badge {
+            color: black;
+            border-radius: 25px;
+        }
+        .pink-lighten-6 {
+            background-color: $pink-lighten-6;
+        }
+        .blue-lighten-8 {
+            background-color: $blue-lighten-8;
+        }
+        .pink-lighten-7 {
+            background-color: $pink-lighten-7;
+        }
+        .blue-lighten-9 {
+            background-color: $blue-lighten-9;
+        }
+        .chip {
+            display: inline-block;
+            background-color: #e4f5fc;
+            padding-left: 0;
+        }
+        .badge-item {
+            margin-bottom: 15px;
+        }
+    }
+    .card-action {
+        h5 {
+            margin-top: 0;
+        }
+        a{
+            color: #039be5;
+            margin-right: 10px;
+            display: inline-block;
+            span {
+                vertical-align: top;
+            }
+        }
+        .socials {
+            display: inline-block;
+            .blue-social{
+                color: #039be5
+            }
+            .pink-social {
+                color: #f8d5d3;
+                &:hover {
+                    color: #f0524f;
+                }
+            }
+            .pink-social.active {
+                color: #f0524f;
+            }
+            span {
+                margin-left: 5px;
+            }
+        }
+        .btn {
+            height: 24px;
+            line-height: 24px;
+            padding: 0px 8px;
+            i {
+                vertical-align: middle;
+                margin-right: 7px;
+            }
+        }
+        .modal {
+            max-height: 100%;
+        }
+    }
+}
+.posts-list, #about-us, #blog {
+    .title-block {
+        color: #8b8b8b;
+        margin: 20px 0 40px 0;
+    }
+    .grid { 
+        margin: 0 auto;
+        max-width: 1190px;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid-sizer {
+            width: 32%;
+            @media #{$medium-only} {
+                width: 48%;
+            }
+            @media #{$small-and-down} {
+                width: 100%;
+            }
+        }
+        .grid-item {
+            width: 32%;
+            margin-bottom: 2%;
+            @media #{$medium-only} {
+                width: 48%;
+            }
+            @media #{$small-and-down} {
+                width: 100%;
+            }            
+        }
+        .grid-item--height1 { max-height: 573px; }
+        .grid-item--height2 { max-height: 364px; }
+        .grid-item--height3 { max-height: 453px; }
+        .grid-item--height4 { max-height: 337px; }
+        .grid-item--height5 { max-height: 514px; }
+        .grid-item--height6 { max-height: 288px; }
+        .grid-item--height7 { max-height: 1026px; }
+    }
+    .btn {
+        box-shadow: none;
+        color: #039be5;
+    }
+    .follow-socials {
+        margin: 30px 0 70px 0;
+        .btn {
+            display: block;
+            text-align: none;
+            height: 72px;
+            line-height: 72px;
+            @media #{$small-and-down} {
+                margin-bottom: 20px;
+            }
+            .social-likes {
+                color: white;
+                .social-likes__button_facebook, .social-likes__button_twitter {
+                    position: relative;
+                    padding-left: 30px;
+                    &:before {
+                        font-family: FontAwesome;
+                        font-style: normal;
+                        font-weight: normal;
+                        text-decoration: inherit;
+                        color: white;
+                        font-size: 18px;
+                        padding-right: 0.5em;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                .social-likes__button_facebook {
+                    &:before {
+                        content: "\f09a";
+                    }
+                }
+                .social-likes__button_twitter {
+                    &:before {
+                        content: "\f099";
+                    }
+                }
+            }
+        }
+    }
+    .card-action {
+        .social-likes {
+            .social-likes__button_facebook, .social-likes__button_twitter {
+                position: relative;
+                padding-left: 30px;
+                vertical-align: middle;
+                &:before {
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-decoration: inherit;
+                    font-size: 18px;
+                    padding-right: 0.5em;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .social-likes__button_twitter {
+                &:before {
+                    content: "\f099";
+                }
+            }
+        }
+    }
+}
+.most-readed-baner {
+    min-height: 640px;
+    max-height: 1000px;
+    background-size: cover;
+    background: url('../images/most-readed-baner-img.jpg') no-repeat center;
+}
+.most-readed-items {
+    margin-top: -120px;
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+// A N D  H O M E  S C S S
+
+
+// L O G I N  S C S S
+.login-content {
+    form {
+        margin: 100px 0 180px 0; 
+        @media #{$small-and-down} {
+            margin: 50px 0 180px 0; 
+        }
+        .title-block {
+            color: #8b8b8b;
+            margin: 44px 0 35px 0;
+        }
+        .input-field {
+            margin-top: 0;
+        }
+        .last-input {
+            margin-bottom: 25px;
+        }
+        .btn, .custom-btn {
+            width: 100%;
+            position: relative;
+            height: 48px;
+            line-height: 48px;
+            i {
+                &:before {
+                    position: absolute;
+                    right: 25px;
+                    top: 0;
+
+                }
+                .fa-google {
+                }
+            }
+        }
+        .custom-btn {
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+}
+// A N D  L O G I N  S C S S
+
+// A B O U T  U S  S C S S
+#about-us {
+    @media #{$medium-and-down} {
+        margin-bottom: 200px;
+    }
+    .faqs-block {
+        padding: 40px 0;
+        background-color: white;
+        .collapsible {
+            @media #{$small-and-down} {
+                width: 80%;
+            }
+            width: 60%;
+            margin: 0 auto;
+            border: none;
+            box-shadow: none;
+            .collapsible-header {
+                margin: 10px 0;
+                position: relative;
+                .material-icons {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            .collapsible-header, .collapsible-body {
+                border-bottom: 0;
+                .big-letter {
+                    margin-right: 35px;
+                    font-size: 30px;
+                    line-height: 30px;
+                    vertical-align: middle;
+                }
+                .answer-text {
+                    display: inline-block;
+                    padding-left: 56px;
+                    margin: 20px 0;
+                }
+            }
+            .collapsible-body {
+                padding: 0 1rem;
+                position: relative;
+                .position-of-big-letter {
+                    position: absolute;
+                    margin-right: 0;
+                    top: 20px;
+                }
+            }
+        }
+    }
+    .card {
+        @media #{$medium-and-down} {
+            margin-bottom: 30px;
+        }
+        .card-content {
+            .circle {
+                border: 1px solid #e0e0e0;
+            }
+        }
+        .card-action {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            a {
+                margin-right: 26px;
+                .fa-twitter {
+                    &:hover {
+                        color: #039be5;
+                    }
+                }
+                .fa-facebook {
+                    color: #704fe6;
+                }
+                .fa-instagram {
+                    color: #40719a;
+                }
+            }
+        }
+    }
+    .form-background {
+        background: url('../images/about-us-form-img.jpg') no-repeat center;
+        background-size: cover;
+        height: 324px;
+        form {
+            width: 60%;
+            margin: 0 auto;
+            @media #{$medium-only} {
+                width: 100%;
+            }
+            @media #{$small-and-down} {
+                width: 100%;
+            }
+            textarea {
+                padding-bottom: 0;
+            }
+            .btn {
+                color: white;
+            }
+        }
+    }
+}
+// A N D  A B O U T  U S  S C S S

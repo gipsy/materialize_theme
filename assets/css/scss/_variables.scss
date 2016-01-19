@@ -1,4 +1,10 @@
 /*** Colors ***/
+$blue-lighten-6: #039be6;
+$blue-lighten-7: #68c3ef;
+$blue-lighten-8: #e5ecf6;
+$blue-lighten-9: #f2f2f2;
+$pink-lighten-6: #fef2e6;
+$pink-lighten-7: #f7e9e8;
 // $primary-color: color("materialize-red", "lighten-2") !default;
 $primary-color: #273238;
 $primary-color-light: lighten($primary-color, 15%) !default;
@@ -16,7 +22,7 @@ $badge-bg-color: $secondary-color !default;
 $button-bg-color-disabled: #DFDFDF !default;
 $button-color: $secondary-color !default;
 $button-color-disabled: #9F9F9F !default;
-$button-color-flat: #343434 !default;
+$button-color-flat: #ffffff !default;
 $button-color-raised: #fff !default;
 $button-floating-size: 37px !default;
 $button-height: 36px !default;
