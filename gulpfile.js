@@ -15,15 +15,15 @@ function handleError(err) {
 
 livereload({ start: true });
 
-gulp.task('static', function() {
-    gulp.src(['./assets/js/**/*', './assets/images/**/*'], {base: './assets/'})
-        .pipe($.watch(['./assets/js/**/*', './assets/images/**/*']))
-        .pipe($.plumber({
-            errorHandler: handleError
-        }))
-        .pipe(gulp.dest('./assets'));
-        // .pipe(livereload());
-});
+// gulp.task('static', function() {
+//     gulp.src(['./assets/js/**/*', './assets/images/**/*'], {base: './assets/'})
+//         .pipe($.watch(['./assets/js/**/*', './assets/images/**/*']))
+//         .pipe($.plumber({
+//             errorHandler: handleError
+//         }))
+//         .pipe(gulp.dest('./assets/'));
+//         // .pipe(livereload());
+// });
 
 gulp.task('styles', function() {
     gulp.src('./assets/css/scss/**/*.scss')
@@ -38,8 +38,8 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
   livereload.listen(35729);
-  gulp.watch(['./src/js/**/*', './src/img/**/*'], {base: './src/'});
-  gulp.watch('./src/css/scss/**/*.scss', ['styles']);
+  gulp.watch(['./assets/js/**/*', './assets/images/**/*'], {base: './assets/'});
+  gulp.watch('./assets/css/scss/**/*.scss', ['styles']);
 });
 
-gulp.task('default', $.sequence(['styles', 'static']));
+gulp.task('default', $.sequence(['styles', 'watch']));
