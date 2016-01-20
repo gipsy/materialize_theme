@@ -4,47 +4,42 @@ layout = "default"
 description = "about us page"
 is_hidden = 0
 ==
-<header>
-  {% partial "navigation" %}
-</header>
-
+{% partial "navigation" %}
 <div id="about-us">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{{ 'assets/images/slider-img1.jpg'|theme }}">
+        <div class="caption left-align">
+          <h3 class="black-text">What We Do</h3>
+          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+        </div>
+      </li>
+      <li>
+        <img src="{{ 'assets/images/slider-img2.jpg'|theme }}"><!-- random image -->
+        <div class="caption left-align">
+          <h3 class="black-text">Left Aligned Caption</h3>
+          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+        </div>
+      </li>
+      <li>
+        <img src="{{ 'assets/images/slider-img3.jpg'|theme }}"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="black-text">Right Aligned Caption</h3>
+          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+        </div>
+      </li>
+      <li>
+        <img src="{{ 'assets/images/slider-img4.jpg'|theme }}"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="black-text">This is our big Tagline!</h3>
+          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+        </div>
+      </li>
+    </ul>
+  </div><!-- end .slider -->
   <div class="container">
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="{{ 'assets/images/slider-img1.jpg'|theme }}">
-          <div class="caption left-align">
-            <h3 class="black-text">What We Do</h3>
-            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          </div>
-        </li>
-        <li>
-          <img src="{{ 'assets/images/slider-img2.jpg'|theme }}"><!-- random image -->
-          <div class="caption left-align">
-            <h3 class="black-text">Left Aligned Caption</h3>
-            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          </div>
-        </li>
-        <li>
-          <img src="{{ 'assets/images/slider-img3.jpg'|theme }}"> <!-- random image -->
-          <div class="caption left-align">
-            <h3 class="black-text">Right Aligned Caption</h3>
-            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          </div>
-        </li>
-        <li>
-          <img src="{{ 'assets/images/slider-img4.jpg'|theme }}"> <!-- random image -->
-          <div class="caption left-align">
-            <h3 class="black-text">This is our big Tagline!</h3>
-            <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          </div>
-        </li>
-      </ul>
-    </div><! -- end .slider -->
-
     <div class="divider"></div>
-
     <h5 class="title-block">FAQs</h5>
     <div class="faqs-block">
       <ul class="collapsible">
