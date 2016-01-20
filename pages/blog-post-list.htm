@@ -1,5 +1,5 @@
-title = "blog post list"
-url = "/blog-post-list"
+title = "Blog Posts List"
+url = "/blog"
 layout = "default"
 description = "Blog list page"
 is_hidden = 0
@@ -9,32 +9,13 @@ pageNumber = "{{ :page }}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-categoryPage = "about-us"
-postPage = "about-us"
-
-[blogRelated]
-slug = "{{ :slug }}"
-results = 5
-direction = "desc"
-
-[blogTags]
-results = 5
-direction = "desc"
-
-[searchPosts]
-slug = "{{ :slug }}"
-pageNumber = "{{ :page }}"
-postsPerPage = 10
+categoryPage = "blog/categories"
 postPage = "blog/post"
-sortOrder = "published_at desc"
 
-[tags]
-results = 0
-sortOrder = "created_at desc"
-emptyTag = 0
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/categories"
 ==
-{% component 'blogPosts' %}
-{% component 'blogRelated' %}
-{% component 'blogTags' %}
-{% component 'searchPosts' %}
-{% component 'tags' %}
+{% partial 'blogPosts/default' %}
+{% component 'blogCategories' %}
