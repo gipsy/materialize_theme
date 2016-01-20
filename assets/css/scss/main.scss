@@ -14,12 +14,16 @@ body {
     margin-bottom: 130px;
 }
 .divider { margin-top: 65px; }
+.divider-reset-margin { margin-top: 0; }
 .material-icons { width: 24px; height: 24px; }
 img { vertical-align: middle; }
 .none-text-transform { text-transform: none !important; margin-right: 0 !important; }
 .custom-row { margin-bottom: 0; }
 .row-reset-margin { margin-left: 0 !important; margin-right: 0 !important; }
 .reset-padding-left-right { padding-left: 0 !important; padding-right: 0 !important; }
+.reset-padding-left { padding-left: 0 !important; }
+.reset-border { border: none !important; }
+.reset-padding-bottom { padding-bottom: 0 !important; }
 // H E A D E R
 .flip, .panel {
     margin: 0px;
@@ -298,47 +302,49 @@ nav {
 }
 
 // B A D G E S , C H I P S  A N D  C A R D S
-span.badge.new {
-    display: inline-block;
-    position: inherit;
-    padding: 0 15px;
-    line-height: 24px;
-    &:after {
-        content: "";
-    }
-}
+// span.badge.new {
+//     display: inline-block;
+//     position: inherit;
+//     padding: 0 15px;
+//     line-height: 24px;
+//     &:after {
+//         content: "";
+//     }
+// }
 .card {
     margin: 0;
     &:hover {
         @extend .z-depth-3
     }
-    .badges {
-        .badge {
-            color: black;
-            border-radius: 25px;
-        }
-        .pink-lighten-6 {
-            background-color: $pink-lighten-6;
-        }
-        .blue-lighten-8 {
-            background-color: $blue-lighten-8;
-        }
-        .pink-lighten-7 {
-            background-color: $pink-lighten-7;
-        }
-        .blue-lighten-9 {
-            background-color: $blue-lighten-9;
+    .chips-block {
+        border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+        padding: 20px;
+        p {
+            margin: 0;
         }
         .chip {
+            color: black;
+            border-radius: 25px;
             display: inline-block;
-            background-color: #e4f5fc;
-            padding-left: 0;
-        }
-        .badge-item {
-            margin-bottom: 15px;
+            padding: 0 15px;
+            line-height: 24px;
+            font-size: 0.8rem;
         }
     }
+    .pink-lighten-6 {
+        background-color: $pink-lighten-6;
+    }
+    .blue-lighten-8 {
+        background-color: $blue-lighten-8;
+    }
+    .pink-lighten-7 {
+        background-color: $pink-lighten-7;
+    }
+    .blue-lighten-9 {
+        background-color: $blue-lighten-9;
+    }
     .card-action {
+        border-top: none;
         h5 {
             margin-top: 0;
         }
@@ -649,3 +655,9 @@ span.badge.new {
     }
 }
 // A N D  A B O U T  U S  S C S S
+
+// B L O G  S C S S
+#blog {
+
+}
+// A N D  B L O G  S C S S

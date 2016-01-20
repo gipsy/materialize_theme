@@ -5859,6 +5859,9 @@ body {
 .divider {
   margin-top: 65px; }
 
+.divider-reset-margin {
+  margin-top: 0; }
+
 .material-icons {
   width: 24px;
   height: 24px; }
@@ -5880,6 +5883,15 @@ img {
 .reset-padding-left-right {
   padding-left: 0 !important;
   padding-right: 0 !important; }
+
+.reset-padding-left {
+  padding-left: 0 !important; }
+
+.reset-border {
+  border: none !important; }
+
+.reset-padding-bottom {
+  padding-bottom: 0 !important; }
 
 .flip, .panel {
   margin: 0px;
@@ -6092,62 +6104,59 @@ nav {
 .collapsible-header.active .show-icon {
   display: none; }
 
-span.badge.new {
-  display: inline-block;
-  position: inherit;
-  padding: 0 15px;
-  line-height: 24px; }
-  span.badge.new:after {
-    content: ""; }
-
 .card {
   margin: 0; }
-  .card .badges .badge {
-    color: black;
-    border-radius: 25px; }
-  .card .badges .pink-lighten-6 {
+  .card .chips-block {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px; }
+    .card .chips-block p {
+      margin: 0; }
+    .card .chips-block .chip {
+      color: black;
+      border-radius: 25px;
+      display: inline-block;
+      padding: 0 15px;
+      line-height: 24px;
+      font-size: 0.8rem; }
+  .card .pink-lighten-6 {
     background-color: #fef2e6; }
-  .card .badges .blue-lighten-8 {
+  .card .blue-lighten-8 {
     background-color: #e5ecf6; }
-  .card .badges .pink-lighten-7 {
+  .card .pink-lighten-7 {
     background-color: #f7e9e8; }
-  .card .badges .blue-lighten-9 {
+  .card .blue-lighten-9 {
     background-color: #f2f2f2; }
-  .card .badges .chip {
-    display: inline-block;
-    background-color: #e4f5fc;
-    padding-left: 0; }
-  .card .badges .badge-item {
-    margin-bottom: 15px; }
-  .card .card-action h5 {
-    margin-top: 0; }
-  .card .card-action a {
-    color: #039be5;
-    margin-right: 10px;
-    display: inline-block; }
-    .card .card-action a span {
-      vertical-align: top; }
-  .card .card-action .socials {
-    display: inline-block; }
-    .card .card-action .socials .blue-social {
-      color: #039be5; }
-    .card .card-action .socials .pink-social {
-      color: #f8d5d3; }
-      .card .card-action .socials .pink-social:hover {
+  .card .card-action {
+    border-top: none; }
+    .card .card-action h5 {
+      margin-top: 0; }
+    .card .card-action a {
+      color: #039be5;
+      margin-right: 10px;
+      display: inline-block; }
+      .card .card-action a span {
+        vertical-align: top; }
+    .card .card-action .socials {
+      display: inline-block; }
+      .card .card-action .socials .blue-social {
+        color: #039be5; }
+      .card .card-action .socials .pink-social {
+        color: #f8d5d3; }
+        .card .card-action .socials .pink-social:hover {
+          color: #f0524f; }
+      .card .card-action .socials .pink-social.active {
         color: #f0524f; }
-    .card .card-action .socials .pink-social.active {
-      color: #f0524f; }
-    .card .card-action .socials span {
-      margin-left: 5px; }
-  .card .card-action .btn, .card .card-action .btn-large {
-    height: 24px;
-    line-height: 24px;
-    padding: 0px 8px; }
-    .card .card-action .btn i, .card .card-action .btn-large i {
-      vertical-align: middle;
-      margin-right: 7px; }
-  .card .card-action .modal {
-    max-height: 100%; }
+      .card .card-action .socials span {
+        margin-left: 5px; }
+    .card .card-action .btn, .card .card-action .btn-large {
+      height: 24px;
+      line-height: 24px;
+      padding: 0px 8px; }
+      .card .card-action .btn i, .card .card-action .btn-large i {
+        vertical-align: middle;
+        margin-right: 7px; }
+    .card .card-action .modal {
+      max-height: 100%; }
 
 .posts-list .title-block, #about-us .title-block, #blog .title-block {
   color: #8b8b8b;
