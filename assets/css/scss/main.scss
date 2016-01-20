@@ -21,129 +21,123 @@ img { vertical-align: middle; }
 .row-reset-margin { margin-left: 0 !important; margin-right: 0 !important; }
 .reset-padding-left-right { padding-left: 0 !important; padding-right: 0 !important; }
 // H E A D E R
-header {
-    background-color: transparent;
-    .navbar-fixed {
-
+.flip, .panel {
+    margin: 0px;
+    text-align: center;
+}
+    .panel {
+        width: 100%;
+        height: 0px;
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 63px;
+        left: 0;
+        @media #{$small-and-down} {
+            top: 56px;
+        }
+        .input-field {
+            margin-top: 100px; 
+            i {
+                color: #039be6;
+            }
+            .validate {
+                border-bottom: 1px solid #7f7f7f;
+            }
+            .clearable{
+                background: #fff url("../images/ic_clear_black.png") no-repeat right -20px center;
+                padding: 3px 25px 3px 4px;     /* Use the same right padding (18) in jQ! */
+                transition: background 0.4s;
+                box-sizing: border-box;
+            }
+            .clearable.x  { background-position: right 5px center; } /* (jQ) Show icon */
+            .clearable.onX{ cursor: pointer; }              /* (jQ) hover cursor style */
+            .clearable::-ms-clear {display: none; width:0; height:0;} /* Remove IE default X */
+            label {
+                color: black;
+            }
+        }
     }
-    .flip, .panel {
-            margin: 0px;
-            text-align: center;
-        }
-        .panel {
-            width: 100%;
-            height: 0px;
-            display: none;
-            position: absolute;
-            background-color: white;
-            top: 63px;
-            left: 0;
-            @media #{$small-and-down} {
-                top: 56px;
-            }
-            .input-field {
-                margin-top: 100px; 
-                i {
-                    color: #039be6;
-                }
-                .validate {
-                    border-bottom: 1px solid #7f7f7f;
-                }
-                .clearable{
-                    background: #fff url("../images/ic_clear_black.png") no-repeat right -20px center;
-                    padding: 3px 25px 3px 4px;     /* Use the same right padding (18) in jQ! */
-                    transition: background 0.4s;
-                    box-sizing: border-box;
-                }
-                .clearable.x  { background-position: right 5px center; } /* (jQ) Show icon */
-                .clearable.onX{ cursor: pointer; }              /* (jQ) hover cursor style */
-                .clearable::-ms-clear {display: none; width:0; height:0;} /* Remove IE default X */
-                label {
-                    color: black;
-                }
-            }
-        }
-        .is-active {
-            height: 300px;
-            display: block;
-            transition-property: height;
-        }
-    nav {
-    	background-color: $blue-lighten-6;
-    	.dropdown-content.active {
-    		top: none !important;
-    		background-color: $blue-lighten-6;
-    		color: white;
-    		li {
-    			a {
-    				color: white;
-    				font-size: 1rem;
-    			}
-    		}
-    	}
-    	ul li.active {
-    		background-color: $blue-lighten-7;
-    	}
-    	.icons-small-device {
-    		li {
-    			&:hover,
-            	&:active {
-    			    background-color: $blue-lighten-7;    		    }
-    		    i {
-    		    	@media #{$small-and-down} {
-		    			height: 56px;
-		    			line-height: 56px;
-		            }
+    .is-active {
+        height: 300px;
+        display: block;
+        transition-property: height;
+    }
+nav {
+	background-color: $blue-lighten-6;
+	.dropdown-content.active {
+		top: none !important;
+		background-color: $blue-lighten-6;
+		color: white;
+		li {
+			a {
+				color: white;
+				font-size: 1rem;
+			}
+		}
+	}
+	ul li.active {
+		background-color: $blue-lighten-7;
+	}
+	.icons-small-device {
+		li {
+			&:hover,
+        	&:active {
+			    background-color: $blue-lighten-7;    		    }
+		    i {
+		    	@media #{$small-and-down} {
+	    			height: 56px;
+	    			line-height: 56px;
+	            }
 
-    		    }
-    		}
-    	}
-    	.nav-on-hover {
-    		li {
-    			&:hover,
-            	&:active {
-    			    background-color: $blue-lighten-7;
-    		    }
-    		}
-    	}
-    	.side-nav {
-    		background-color: $blue-lighten-6;
-    		@media #{$small-and-down} {
-    			top: 56px;
-            }
-            @media #{$medium-and-up} {
-            	top: 64px;
-            }
+		    }
+		}
+	}
+	.nav-on-hover {
+		li {
+			&:hover,
+        	&:active {
+			    background-color: $blue-lighten-7;
+		    }
+		}
+	}
+	.side-nav {
+		background-color: $blue-lighten-6;
+		@media #{$small-and-down} {
+			top: 56px;
+        }
+        @media #{$medium-and-up} {
+        	top: 64px;
+        }
+        li {
+        	&:hover,
+        	&:active {
+				background-color: $blue-lighten-7;
+			}
+			a { color: white; }
+        }
+        #collapsible {
             li {
-            	&:hover,
-            	&:active {
-    				background-color: $blue-lighten-7;
-    			}
-    			a { color: white; }
-            }
-            #collapsible {
-                li {
+                background-color: $blue-lighten-6;
+                padding: 0;
+                &:hover {
+                    background-color: $blue-lighten-7;
+                }
+                &:active {
                     background-color: $blue-lighten-6;
-                    padding: 0;
-                    &:hover {
-                        background-color: $blue-lighten-7;
-                    }
-                    &:active {
-                        background-color: $blue-lighten-6;
-                    }
-                }
-                .collapsible-header {
-                    position: relative;
-                    .material-icons {
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                    }
                 }
             }
-    		 
-    	}
-    }
+            .collapsible-header {
+                position: relative;
+                .material-icons {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+		 
+	}
 }
 
 //F O O T E R
