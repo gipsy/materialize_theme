@@ -1,6 +1,6 @@
 {% set posts = blogPosts.posts %}
 
-<div class="post-list">
+<div class="posts-list">
   <div class="grid">
     <div class="grid-sizer"></div>
     {% for post in posts %}
@@ -18,16 +18,15 @@
             {% endfor %}
           {% endif %}
 
-          <div class="badges">
+          <div class="card-head">
             {% for category in post.categories %}
-              <div class="new badge pink-lighten-6">
+              <div class="chip pink-lighten-6">
                 <a href="{{ category.url}}">{{ category.name }}</a>
                 {% if not loop.last %}, {% endif %}
               </div>
             {% endfor %}
+            <p class="right">{{ post.published_at|date('M d, Y') }}</p>
           </div>
-
-          <p class="right">{{ post.published_at|date('M d, Y') }}</p>
 
           <div class="card-content">
             <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
