@@ -1,0 +1,12 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "default"
+description = "Single post page"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "categories"
+==
+{% partial 'blogPost/default' %}
+test
