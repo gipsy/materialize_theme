@@ -6106,12 +6106,12 @@ nav {
 
 .card {
   margin: 0; }
-  .card .chips-block {
+  .card .card-head {
     border-bottom: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
-    .card .chips-block p {
+    .card .card-head p {
       margin: 0; }
-    .card .chips-block .chip {
+    .card .card-head .chip {
       color: black;
       border-radius: 25px;
       display: inline-block;
