@@ -2044,7 +2044,7 @@ ul {
 .z-depth-2 {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-3, .card:hover {
+.z-depth-3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
 .z-depth-4, .modal {
@@ -6108,7 +6108,8 @@ nav {
   margin: 0; }
   .card .card-head {
     border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 20px; }
+    padding: 20px;
+    overflow: hidden; }
     .card .card-head p {
       margin: 0; }
     .card .card-head .chip {

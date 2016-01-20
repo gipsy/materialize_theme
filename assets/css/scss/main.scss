@@ -302,23 +302,12 @@ nav {
 }
 
 // B A D G E S , C H I P S  A N D  C A R D S
-// span.badge.new {
-//     display: inline-block;
-//     position: inherit;
-//     padding: 0 15px;
-//     line-height: 24px;
-//     &:after {
-//         content: "";
-//     }
-// }
 .card {
     margin: 0;
-    &:hover {
-        @extend .z-depth-3
-    }
     .card-head {
         border-bottom: 1px solid rgba(160, 160, 160, 0.2);
         padding: 20px;
+        overflow: hidden;
         p {
             margin: 0;
         }
