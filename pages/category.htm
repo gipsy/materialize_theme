@@ -10,13 +10,13 @@ categoryFilter = ":slug"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-categoryPage = "{{ :slug }}"
+categoryPage = "category"
 postPage = "{{ :slug }}"
 
 [blogCategories]
 slug = "{{ :slug }}"
 displayEmpty = 0
-categoryPage = "blog/category"
+categoryPage = "category"
 ==
-{% component 'blogPosts' %}
-{% component 'blogCategories' %}
+{% partial 'blogPosts/default' %}
+{% partial 'blogCategories/default' %}
