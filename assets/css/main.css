@@ -6175,69 +6175,69 @@ nav {
     .card .card-action .modal {
       max-height: 100%; }
 
-.posts-list .title-block, #about-us .title-block, #blog .title-block {
+.posts-list .title-block, #about-us .title-block {
   color: #8b8b8b;
   margin: 20px 0 40px 0; }
 
-.posts-list .grid, #about-us .grid, #blog .grid {
+.posts-list .grid, #about-us .grid {
   margin: 0 auto;
   max-width: 1190px; }
-  .posts-list .grid:after, #about-us .grid:after, #blog .grid:after {
+  .posts-list .grid:after, #about-us .grid:after {
     content: '';
     display: block;
     clear: both; }
-  .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer, #blog .grid .grid-sizer {
-    width: 32%; }
+  .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer {
+    width: 31.5%; }
     @media only screen and (min-width: 601px) and (max-width: 992px) {
-      .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer, #blog .grid .grid-sizer {
+      .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer {
         width: 48%; } }
     @media only screen and (max-width: 600px) {
-      .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer, #blog .grid .grid-sizer {
+      .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer {
         width: 100%; } }
-  .posts-list .grid .grid-item, #about-us .grid .grid-item, #blog .grid .grid-item {
+  .posts-list .grid .grid-item, #about-us .grid .grid-item {
     width: 32%;
     margin-bottom: 2%; }
     @media only screen and (min-width: 601px) and (max-width: 992px) {
-      .posts-list .grid .grid-item, #about-us .grid .grid-item, #blog .grid .grid-item {
+      .posts-list .grid .grid-item, #about-us .grid .grid-item {
         width: 48%; } }
     @media only screen and (max-width: 600px) {
-      .posts-list .grid .grid-item, #about-us .grid .grid-item, #blog .grid .grid-item {
+      .posts-list .grid .grid-item, #about-us .grid .grid-item {
         width: 100%; } }
-  .posts-list .grid .grid-item--height1, #about-us .grid .grid-item--height1, #blog .grid .grid-item--height1 {
+  .posts-list .grid .grid-item--height1, #about-us .grid .grid-item--height1 {
     max-height: 573px; }
-  .posts-list .grid .grid-item--height2, #about-us .grid .grid-item--height2, #blog .grid .grid-item--height2 {
+  .posts-list .grid .grid-item--height2, #about-us .grid .grid-item--height2 {
     max-height: 364px; }
-  .posts-list .grid .grid-item--height3, #about-us .grid .grid-item--height3, #blog .grid .grid-item--height3 {
+  .posts-list .grid .grid-item--height3, #about-us .grid .grid-item--height3 {
     max-height: 453px; }
-  .posts-list .grid .grid-item--height4, #about-us .grid .grid-item--height4, #blog .grid .grid-item--height4 {
+  .posts-list .grid .grid-item--height4, #about-us .grid .grid-item--height4 {
     max-height: 337px; }
-  .posts-list .grid .grid-item--height5, #about-us .grid .grid-item--height5, #blog .grid .grid-item--height5 {
+  .posts-list .grid .grid-item--height5, #about-us .grid .grid-item--height5 {
     max-height: 514px; }
-  .posts-list .grid .grid-item--height6, #about-us .grid .grid-item--height6, #blog .grid .grid-item--height6 {
+  .posts-list .grid .grid-item--height6, #about-us .grid .grid-item--height6 {
     max-height: 288px; }
-  .posts-list .grid .grid-item--height7, #about-us .grid .grid-item--height7, #blog .grid .grid-item--height7 {
+  .posts-list .grid .grid-item--height7, #about-us .grid .grid-item--height7 {
     max-height: 1026px; }
 
-.posts-list .btn, .posts-list .btn-large, #about-us .btn, #about-us .btn-large, #blog .btn, #blog .btn-large {
+.posts-list .btn, .posts-list .btn-large, #about-us .btn, #about-us .btn-large {
   box-shadow: none;
   color: #039be5; }
 
-.posts-list .follow-socials, #about-us .follow-socials, #blog .follow-socials {
+.posts-list .follow-socials, #about-us .follow-socials {
   margin: 30px 0 70px 0; }
-  .posts-list .follow-socials .btn, .posts-list .follow-socials .btn-large, #about-us .follow-socials .btn, #about-us .follow-socials .btn-large, #blog .follow-socials .btn, #blog .follow-socials .btn-large {
+  .posts-list .follow-socials .btn, .posts-list .follow-socials .btn-large, #about-us .follow-socials .btn, #about-us .follow-socials .btn-large {
     display: block;
     text-align: none;
     height: 72px;
     line-height: 72px; }
     @media only screen and (max-width: 600px) {
-      .posts-list .follow-socials .btn, .posts-list .follow-socials .btn-large, #about-us .follow-socials .btn, #about-us .follow-socials .btn-large, #blog .follow-socials .btn, #blog .follow-socials .btn-large {
+      .posts-list .follow-socials .btn, .posts-list .follow-socials .btn-large, #about-us .follow-socials .btn, #about-us .follow-socials .btn-large {
         margin-bottom: 20px; } }
-    .posts-list .follow-socials .btn .social-likes, .posts-list .follow-socials .btn-large .social-likes, #about-us .follow-socials .btn .social-likes, #about-us .follow-socials .btn-large .social-likes, #blog .follow-socials .btn .social-likes, #blog .follow-socials .btn-large .social-likes {
+    .posts-list .follow-socials .btn .social-likes, .posts-list .follow-socials .btn-large .social-likes, #about-us .follow-socials .btn .social-likes, #about-us .follow-socials .btn-large .social-likes {
       color: white; }
-      .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook, .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter, #blog .follow-socials .btn .social-likes .social-likes__button_facebook, #blog .follow-socials .btn-large .social-likes .social-likes__button_facebook, #blog .follow-socials .btn .social-likes .social-likes__button_twitter, #blog .follow-socials .btn-large .social-likes .social-likes__button_twitter {
+      .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook, .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter {
         position: relative;
         padding-left: 30px; }
-        .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #blog .follow-socials .btn .social-likes .social-likes__button_facebook:before, #blog .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #blog .follow-socials .btn .social-likes .social-likes__button_twitter:before, #blog .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
+        .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
           font-family: FontAwesome;
           font-style: normal;
           font-weight: normal;
@@ -6247,16 +6247,16 @@ nav {
           padding-right: 0.5em;
           position: absolute;
           left: 0; }
-      .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #blog .follow-socials .btn .social-likes .social-likes__button_facebook:before, #blog .follow-socials .btn-large .social-likes .social-likes__button_facebook:before {
+      .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook:before {
         content: "\f09a"; }
-      .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #blog .follow-socials .btn .social-likes .social-likes__button_twitter:before, #blog .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
+      .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
         content: "\f099"; }
 
-.posts-list .card-action .social-likes .social-likes__button_facebook, .posts-list .card-action .social-likes .social-likes__button_twitter, #about-us .card-action .social-likes .social-likes__button_facebook, #about-us .card-action .social-likes .social-likes__button_twitter, #blog .card-action .social-likes .social-likes__button_facebook, #blog .card-action .social-likes .social-likes__button_twitter {
+.posts-list .card-action .social-likes .social-likes__button_facebook, .posts-list .card-action .social-likes .social-likes__button_twitter, #about-us .card-action .social-likes .social-likes__button_facebook, #about-us .card-action .social-likes .social-likes__button_twitter {
   position: relative;
   padding-left: 30px;
   vertical-align: middle; }
-  .posts-list .card-action .social-likes .social-likes__button_facebook:before, .posts-list .card-action .social-likes .social-likes__button_twitter:before, #about-us .card-action .social-likes .social-likes__button_facebook:before, #about-us .card-action .social-likes .social-likes__button_twitter:before, #blog .card-action .social-likes .social-likes__button_facebook:before, #blog .card-action .social-likes .social-likes__button_twitter:before {
+  .posts-list .card-action .social-likes .social-likes__button_facebook:before, .posts-list .card-action .social-likes .social-likes__button_twitter:before, #about-us .card-action .social-likes .social-likes__button_facebook:before, #about-us .card-action .social-likes .social-likes__button_twitter:before {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -6266,7 +6266,7 @@ nav {
     position: absolute;
     left: 0; }
 
-.posts-list .card-action .social-likes .social-likes__button_twitter:before, #about-us .card-action .social-likes .social-likes__button_twitter:before, #blog .card-action .social-likes .social-likes__button_twitter:before {
+.posts-list .card-action .social-likes .social-likes__button_twitter:before, #about-us .card-action .social-likes .social-likes__button_twitter:before {
   content: "\f099"; }
 
 .most-readed-baner {
@@ -6382,3 +6382,28 @@ nav {
       padding-bottom: 0; }
     #about-us .form-background form .btn, #about-us .form-background form .btn-large {
       color: white; }
+
+#blog .grid {
+  margin: 0 auto;
+  max-width: 1190px; }
+  #blog .grid:after {
+    content: '';
+    display: block;
+    clear: both; }
+  #blog .grid .grid-sizer {
+    width: 40%; }
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+      #blog .grid .grid-sizer {
+        width: 48%; } }
+    @media only screen and (max-width: 600px) {
+      #blog .grid .grid-sizer {
+        width: 100%; } }
+  #blog .grid .grid-item {
+    width: 40%;
+    margin-bottom: 2%; }
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+      #blog .grid .grid-item {
+        width: 48%; } }
+    @media only screen and (max-width: 600px) {
+      #blog .grid .grid-item {
+        width: 100%; } }
