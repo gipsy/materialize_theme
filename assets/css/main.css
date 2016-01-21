@@ -6089,6 +6089,8 @@ nav {
     margin-top: 20px; }
     #modal2 .apps-panel-content .socials a {
       margin-right: 10px; }
+      #modal2 .apps-panel-content .socials a i {
+        margin-right: 5px; }
       #modal2 .apps-panel-content .socials a span {
         vertical-align: top; }
   #modal2 .apps-panel-content .chip-item-box {
