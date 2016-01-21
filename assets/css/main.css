@@ -5876,6 +5876,9 @@ img {
 .custom-row {
   margin-bottom: 0; }
 
+.castom-margin {
+  margin: 15px 0; }
+
 .row-reset-margin {
   margin-left: 0 !important;
   margin-right: 0 !important; }
@@ -5892,6 +5895,32 @@ img {
 
 .reset-padding-bottom {
   padding-bottom: 0 !important; }
+
+.reset-margin {
+  margin: 0; }
+
+.head-title {
+  color: #8c8c8c; }
+
+.chip {
+  color: black;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 24px;
+  font-size: 0.8rem; }
+
+.pink-lighten-6 {
+  background-color: #fef2e6; }
+
+.blue-lighten-8 {
+  background-color: #e5ecf6; }
+
+.pink-lighten-7 {
+  background-color: #f7e9e8; }
+
+.blue-lighten-9 {
+  background-color: #f2f2f2; }
 
 .flip, .panel {
   margin: 0px;
@@ -6053,24 +6082,24 @@ nav {
 #modal2 .divider {
   margin-top: 0; }
 
-#modal2 .footer-half {
-  margin-bottom: 20px; }
+#modal2 .apps-panel-content {
+  margin: 20px 0; }
+  #modal2 .apps-panel-content .socials {
+    display: block;
+    margin-top: 20px; }
+    #modal2 .apps-panel-content .socials a {
+      margin-right: 10px; }
+      #modal2 .apps-panel-content .socials a span {
+        vertical-align: top; }
+  #modal2 .apps-panel-content .chip-item-box {
+    margin: 10px 0; }
+    #modal2 .apps-panel-content .chip-item-box .circle-chip {
+      padding: 0 10px; }
   @media only screen and (max-width: 992px) {
-    #modal2 .footer-half {
+    #modal2 .apps-panel-content .footer-half {
       height: 100%;
       max-height: 550px;
       width: 100%; } }
-  @media only screen and (max-width: 600px) {
-    #modal2 .footer-half {
-      height: 100%;
-      max-height: 1100px; } }
-  #modal2 .footer-half .card {
-    box-shadow: none; }
-    #modal2 .footer-half .card .card-action {
-      border-top: 0; }
-    #modal2 .footer-half .card .blue-lighten-9 {
-      min-width: 1.7rem;
-      padding: 0; }
 
 .slider .indicators {
   bottom: 60px;
@@ -6106,27 +6135,12 @@ nav {
 
 .card {
   margin: 0; }
-  .card .card-head {
+  .card .card-head, .card .head-title {
     border-bottom: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px;
     overflow: hidden; }
-    .card .card-head p {
+    .card .card-head p, .card .head-title p {
       margin: 0; }
-    .card .card-head .chip {
-      color: black;
-      border-radius: 25px;
-      display: inline-block;
-      padding: 0 15px;
-      line-height: 24px;
-      font-size: 0.8rem; }
-  .card .pink-lighten-6 {
-    background-color: #fef2e6; }
-  .card .blue-lighten-8 {
-    background-color: #e5ecf6; }
-  .card .pink-lighten-7 {
-    background-color: #f7e9e8; }
-  .card .blue-lighten-9 {
-    background-color: #f2f2f2; }
   .card .card-action {
     border-top: none; }
     .card .card-action h5 {
