@@ -4,11 +4,11 @@ layout = "default"
 is_hidden = 0
 
 [blogPosts]
-pageNunber = "{{ :page }}"
-postsPerPage = 10
+pageNumber = "{{ :page }}"
+postsPerPage = "{{ 10 }}"
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-categoryPage = ""
+categoryPage = "about-us"
 postPage = "post"
 ==
 {% partial "navigation" %}
@@ -349,7 +349,7 @@ postPage = "post"
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height7">
           <div class="card hoverable">
-            <div class="card-head">
+            <div class="head-title">
               <p>On Twitter</p>
             </div>
             <div class="card-head reset-border reset-padding-bottom">
