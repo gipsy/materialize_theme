@@ -1,24 +1,3 @@
-<h5 class="title-block">Social Login</h5>
-<!-- <div class="row row&#45;reset&#45;margin"> -->
-<!--   <a class="waves&#45;effect waves&#45;light btn light&#45;blue darken&#45;1" href="https://twitter.com"><i class="fa fa&#45;twitter"></i>Twitter</a> -->
-<!-- </div> -->
-<!-- <div class="row row&#45;reset&#45;margin"> -->
-<!--   <a class="waves&#45;effect waves&#45;light btn light&#45;blue darken&#45;4" href="https://facebook.com"><i class="fa fa&#45;facebook"></i>Facebook</a> -->
-<!-- </div> -->
-
-{% set providerColor = {
-                          'google'  : 'yellow',
-                          'twitter' : 'light-blue darken-1',
-                          'facebook': 'light-blue darken-4'
-                        }
-%}
-
-{% for name, link in social_login_links %}
-  <div class="row row-reset-margin">
-    <a class="waves-effect waves-light btn {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="fa fa-{{ name|lower }}"></i>{{ name }}</a>
-  </div>
-{% endfor %}
-
 <form
     data-request="onRegister">
     <div class="form-group">
