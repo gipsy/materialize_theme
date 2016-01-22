@@ -114,18 +114,18 @@ img { vertical-align: middle; }
     line-height: 24px;
     font-size: 0.8rem;
 }
-    .pink-lighten-6 {
-        background-color: $pink-lighten-6;
-    }
-    .blue-lighten-8 {
-        background-color: $blue-lighten-8;
-    }
-    .pink-lighten-7 {
-        background-color: $pink-lighten-7;
-    }
-    .blue-lighten-9 {
-        background-color: $blue-lighten-9;
-    }
+.pink-lighten-6 {
+    background-color: $pink-lighten-6;
+}
+.blue-lighten-8 {
+    background-color: $blue-lighten-8;
+}
+.pink-lighten-7 {
+    background-color: $pink-lighten-7;
+}
+.blue-lighten-9 {
+    background-color: $blue-lighten-9;
+}
 // AND STYLES OFTEN USED IN ALL THE PARTS OF SITE
 
 // H E A D E R
@@ -422,6 +422,9 @@ nav {
         p {
             margin: 0;
         }
+        .chips-wrap {
+            width: 75%;
+        }
     }
     .card-action {
         border-top: none;
@@ -468,7 +471,7 @@ nav {
         }
     }
 }
-.posts-list, #about-us, #blog {
+.posts-list, #about-us {
     .title-block {
         color: #8b8b8b;
         margin: 20px 0 40px 0;
@@ -482,7 +485,7 @@ nav {
             clear: both;
         }
         .grid-sizer {
-            width: 32%;
+            width: 31.5%;
             @media #{$medium-only} {
                 width: 48%;
             }
@@ -738,6 +741,33 @@ nav {
 
 // B L O G  S C S S
 #blog {
-
+    .grid { 
+        margin: 0 auto;
+        max-width: 1190px;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid-sizer {
+            width: 40%;
+            @media #{$medium-only} {
+                width: 48%;
+            }
+            @media #{$small-and-down} {
+                width: 100%;
+            }
+        }
+        .grid-item {
+            width: 40%;
+            margin-bottom: 2%;
+            @media #{$medium-only} {
+                width: 48%;
+            }
+            @media #{$small-and-down} {
+                width: 100%;
+            }            
+        }
+    }
 }
 // A N D  B L O G  S C S S
