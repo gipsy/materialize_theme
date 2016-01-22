@@ -1,0 +1,32 @@
+{{ form_ajax('onUpdate', { model: user }) }}
+
+<h5 class="title-block">Update Credentials</h5>
+</br>
+<div class="row">
+  <div class="input-field col s12">
+    <label for="accountName">Full Name</label>
+    <input name="name" id="accountName" type="text" class="validate" value="{{ form_value('name') }}">
+  </div>
+</div>
+
+<div class="row">
+  <div class="input-field col s12">
+    <label for="accountEmail">Email</label>
+    <input name="email" id="accountEmail" type="email" class="validate" value="{{ form_value('email') }}">
+  </div>
+</div>
+
+<div class="input-field col s12">
+  <label for="accountPassword">New Password</label>
+  <input name="password" id="accountPassword" type="password" class="validate" value="{{ form_value('') }}">
+</div>
+
+<div class="input-field last-input col s12">
+  <label for="accountPasswordConfirm">Confirm New Password</label>
+  <input name="password_confirmation" id="accountPasswordConfirm" type="password">
+</div>
+
+</br>
+<button type="submit" class="waves-effect waves-light btn light-blue right">Save</button>
+
+{{ form_close() }}

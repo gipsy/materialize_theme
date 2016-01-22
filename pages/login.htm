@@ -7,51 +7,9 @@ is_hidden = 0
 [account]
 redirect = "login"
 paramCode = "code"
+
+[sociallogin]
 ==
-{% component 'account' %}
-<div class="login-content">
-	<div class="container">
-		<div class="row">
-	        <div class="col l4 offset-l4 m6 offset-m3 s12">
-	        	<div class="row">
-				    <form class="col s12">
-				    	<h5 class="title-block">Social Login</h5>
-				        <div class="row row-reset-margin">
-				            <a class="waves-effect waves-light btn yellow darken-4" href="https://myaccount.google.com"><i class="fa fa-google"></i>Google</a>
-				        </div>
-				        <div class="row row-reset-margin">
-				            <a class="waves-effect waves-light btn light-blue darken-1" href="https://twitter.com"><i class="fa fa-twitter"></i>Twitter</a>
-				        </div>
-				        <div class="row row-reset-margin">
-				            <a class="waves-effect waves-light btn light-blue darken-4" href="https://facebook.com"><i class="fa fa-facebook"></i>Facebook</a>
-				        </div>
-				        <h5 class="title-block">Email Login</h5>
-				        <div class="row">
-				            <div class="input-field col s12">
-				                <input id="email" type="email" class="validate">
-				                <label for="email">Email</label>
-				            </div>
-				        </div>
-				        <div class="row">
-					        <div class="input-field last-input col s12">
-					            <input id="password" type="password" class="validate">
-					            <label for="password">Password</label>
-					        </div>
-				        </div>
-				        <div class="row">
-				        	<div class="col s12">
-					            <a class="waves-effect waves-light btn">Login</a>
-                            </div>
-				        </div>
-				        <div class="row">
-				        	<div class="col s12">
-					            <a href="#" class="custom-btn center-align">Create Account</a>
-					        </div>
-				        </div>
-				    </form>
-                </div>
-	        </div>
-	    </div>
-	</div>
-</div>
+{% partial 'account/default' %}
+{% component 'sociallogin' %}
 {% partial "footer" %}
