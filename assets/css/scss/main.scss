@@ -114,18 +114,18 @@ img { vertical-align: middle; }
     line-height: 24px;
     font-size: 0.8rem;
 }
-    .pink-lighten-6 {
-        background-color: $pink-lighten-6;
-    }
-    .blue-lighten-8 {
-        background-color: $blue-lighten-8;
-    }
-    .pink-lighten-7 {
-        background-color: $pink-lighten-7;
-    }
-    .blue-lighten-9 {
-        background-color: $blue-lighten-9;
-    }
+.pink-lighten-6 {
+    background-color: $pink-lighten-6;
+}
+.blue-lighten-8 {
+    background-color: $blue-lighten-8;
+}
+.pink-lighten-7 {
+    background-color: $pink-lighten-7;
+}
+.blue-lighten-9 {
+    background-color: $blue-lighten-9;
+}
 // AND STYLES OFTEN USED IN ALL THE PARTS OF SITE
 
 // H E A D E R
@@ -421,6 +421,9 @@ nav {
         overflow: hidden;
         p {
             margin: 0;
+        }
+        .chips-wrap {
+            width: 75%;
         }
     }
     .card-action {

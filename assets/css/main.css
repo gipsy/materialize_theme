@@ -6200,6 +6200,8 @@ nav {
     overflow: hidden; }
     .card .card-head p, .card .head-title p {
       margin: 0; }
+    .card .card-head .chips-wrap, .card .head-title .chips-wrap {
+      width: 75%; }
   .card .card-action {
     border-top: none; }
     .card .card-action h5 {
