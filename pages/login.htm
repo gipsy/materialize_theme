@@ -3,8 +3,12 @@ url = "/login"
 layout = "default"
 description = "login page"
 is_hidden = 0
+
+[account]
+redirect = "login"
+paramCode = "code"
 ==
-{% partial "header" %}
+{% component 'account' %}
 <div class="login-content">
 	<div class="container">
 		<div class="row">
