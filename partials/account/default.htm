@@ -1,0 +1,27 @@
+{% if not user %}
+
+    <div class="row">
+      <div class="col l4 offset-l4 m6 offset-m3 s12">
+
+        <h3>Sign in</h3>
+        {% partial account ~ '::signin' %}
+
+        <h3>Register</h3>
+        {% partial account ~ '::register' %}
+
+      </div>
+    </div>
+
+{% else %}
+  <div class="row">
+    <div class="col l4 offset-l4 m6 offset-m3 s12">
+
+      {% partial account ~ '::activation_check' %}
+
+      {% partial account ~ '::update' %}
+
+      {% partial account ~ '::deactivate_link' %}
+
+    </div>
+  </div>
+{% endif %}
