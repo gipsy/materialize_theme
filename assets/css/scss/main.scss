@@ -3,6 +3,12 @@
 @import 'materialize';
 
 // COLOR CLASSES
+$blue-lighten-6: #039be6;
+$blue-lighten-7: #68c3ef;
+$blue-lighten-8: #e5ecf6;
+$blue-lighten-9: #f2f2f2;
+$pink-lighten-6: #fef2e6;
+$pink-lighten-7: #f7e9e8;
 .red-lighten-5 {
   background-color: #ffebee;
 }
@@ -88,7 +94,7 @@ body {
     min-width: 320px;
     background-color: #f2f2f2;
 }
-// STYLES OFTEN USED IN ALL THE PARTS OF SITE
+//STYLES OFTEN USED IN ALL THE PARTS OF SITE
 .margin-bottom-custom {
     margin-bottom: 130px;
     @media #{$medium-and-down} {
@@ -109,7 +115,7 @@ img { vertical-align: middle; }
 .reset-padding-right { padding-right: 0 !important; }
 .reset-border { border: none !important; }
 .reset-padding-bottom { padding-bottom: 0 !important; }
-.reset-margin { margin: 0; }
+.reset-margin { margin: 0!important; }
 .head-title { color: #8c8c8c; }
 .chip {
     color: black;
@@ -117,6 +123,7 @@ img { vertical-align: middle; }
     display: inline-block;
     padding: 0 15px;
     line-height: 24px;
+    height: 24px;
     font-size: 0.8rem;
 }
 .title-block {
@@ -186,7 +193,7 @@ nav {
 	background-color: $blue-lighten-6;
 	.dropdown-content.active {
 		top: none !important;
-		background-color: $blue-lighten-6;
+		/*background-color: $blue-lighten-6;*/
 		color: white;
 		li {
 			a {
@@ -202,7 +209,8 @@ nav {
 		li {
 			&:hover,
         	&:active {
-			    background-color: $blue-lighten-7;    		    }
+			    background-color: $blue-lighten-7;   		   
+		    }
 		    i {
                 margin: 0 auto;
                 width: 100%;
@@ -322,6 +330,7 @@ nav {
             line-height: 45px;
             height: 45px;
             padding: 0 1rem;
+            color: white;
         }
     }
     span {
@@ -443,11 +452,28 @@ nav {
             margin-top: 0;
         }
         a{
-            color: #039be5;
+            color: #039be5 !important;
             margin-right: 10px;
             display: inline-block;
             span {
                 vertical-align: top;
+            }
+        }
+        .fixed-action-btn {
+            ul {
+                top: 40%;
+                li {
+                    margin: 0;
+                    .btn-floating {
+                        width: 30px;
+                        height: 30px;
+                        i {
+                            font-size: 15px;
+                            line-height: 30px;
+                            display: block;
+                        }
+                    }
+                }
             }
         }
         .btn.modal-trigger {
@@ -455,6 +481,11 @@ nav {
         }
         .socials {
             display: inline-block;
+            position: relative;
+            width: 20%;
+            .fixed-action-btn ul {
+                bottom: 30px;
+            }
             .blue-social{
                 color: #039be5
             }

@@ -80,8 +80,17 @@ postPage = "post"
             <div class="card-action">
               <a href="#">Read more</a>
               <div class="socials right">
-                  <a href="#"><i class="material-icons pink-social">favorite</i></a>
-                  <a href="#"><i class="material-icons blue-social">share</i></a>
+                <a href="#"><i class="material-icons pink-social">favorite</i></a>
+                <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; bottom: 0; right: 0;">
+                  <a class="reset-margin">
+                    <i class="material-icons blue-social">share</i>
+                  </a>
+                  <ul>
+                    <li><a class="btn-floating light-blue darken-4"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="btn-floating light-blue darken-1"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="btn-floating orange"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+                </div><!-- end .fixed-action-btn -->
               </div>
             </div>
           </div>
@@ -221,14 +230,14 @@ postPage = "post"
       <div class="follow-socials">
         <div class="row">
           <div class="col s12 m6 l6">
-            <a class="waves-effect waves-light btn">
+            <a class="waves-effect waves-light btn light-blue darken-1">
               <div class="social-likes" data-counters="no">
                 <div class="facebook" title="Share link on Facebook">Follow us on facebook</div>
               </div>
             </a>
           </div>
           <div class="col s12 m6 l6">
-            <a class="waves-effect waves-light btn">
+            <a class="waves-effect waves-light btn light-blue darken-1">
               <div class="social-likes" data-counters="no">
                 <div class="twitter" title="Share link on Twitter">Follow us on twitter</div>
               </div>
