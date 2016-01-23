@@ -2,6 +2,9 @@
 @import '//fonts.googleapis.com/icon?family=Material+Icons';
 @import 'materialize';
 
+// Import Modules;
+@import 'modules/forms';
+
 // COLOR CLASSES
 $blue-lighten-6: #039be6;
 $blue-lighten-7: #68c3ef;
@@ -131,7 +134,7 @@ img { vertical-align: middle; }
     margin: 20px 0 20px 0;
 }
 .btn { color: white !important; }
-.full-width-btn { width: 100%; }
+.btn-full-width { width: 100%; }
 .pink-lighten-6 {
     background-color: $pink-lighten-6;
 }
