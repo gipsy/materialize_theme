@@ -5910,8 +5910,11 @@ body {
   min-width: 320px;
   background-color: #f2f2f2; }
 
-.home-content, #about-us, #blog {
+.margin-bottom-custom {
   margin-bottom: 130px; }
+  @media only screen and (max-width: 992px) {
+    .margin-bottom-custom {
+      margin-bottom: 170px; } }
 
 .divider {
   margin-top: 65px; }
@@ -5933,8 +5936,11 @@ img {
 .custom-row {
   margin-bottom: 0; }
 
-.castom-margin {
+.custom-margin {
   margin: 15px 0; }
+
+.custom-margin-100 {
+  margin-top: 100px !important; }
 
 .row-reset-margin {
   margin-left: 0 !important;
@@ -5946,6 +5952,9 @@ img {
 
 .reset-padding-left {
   padding-left: 0 !important; }
+
+.reset-padding-right {
+  padding-right: 0 !important; }
 
 .reset-border {
   border: none !important; }
@@ -5966,6 +5975,16 @@ img {
   padding: 0 15px;
   line-height: 24px;
   font-size: 0.8rem; }
+
+.title-block {
+  color: #8b8b8b;
+  margin: 20px 0 20px 0; }
+
+.btn, .btn-large {
+  color: white !important; }
+
+.full-width-btn {
+  width: 100%; }
 
 .pink-lighten-6 {
   background-color: #fef2e6; }
@@ -6212,6 +6231,8 @@ nav {
       display: inline-block; }
       .card .card-action a span {
         vertical-align: top; }
+    .card .card-action .btn.modal-trigger, .card .card-action .modal-trigger.btn-large {
+      color: #039be5 !important; }
     .card .card-action .socials {
       display: inline-block; }
       .card .card-action .socials .blue-social {
@@ -6234,69 +6255,66 @@ nav {
     .card .card-action .modal {
       max-height: 100%; }
 
-.posts-list .title-block, #about-us .title-block {
-  color: #8b8b8b;
-  margin: 20px 0 40px 0; }
-
-.posts-list .grid, #about-us .grid {
+.grid {
   margin: 0 auto;
+  padding-top: 20px;
   max-width: 1190px; }
-  .posts-list .grid:after, #about-us .grid:after {
+  .grid:after {
     content: '';
     display: block;
     clear: both; }
-  .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer {
+  .grid .grid-sizer {
     width: 31.5%; }
     @media only screen and (min-width: 601px) and (max-width: 992px) {
-      .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer {
+      .grid .grid-sizer {
         width: 48%; } }
     @media only screen and (max-width: 600px) {
-      .posts-list .grid .grid-sizer, #about-us .grid .grid-sizer {
+      .grid .grid-sizer {
         width: 100%; } }
-  .posts-list .grid .grid-item, #about-us .grid .grid-item {
+  .grid .grid-item {
     width: 32%;
     margin-bottom: 2%; }
     @media only screen and (min-width: 601px) and (max-width: 992px) {
-      .posts-list .grid .grid-item, #about-us .grid .grid-item {
+      .grid .grid-item {
         width: 48%; } }
     @media only screen and (max-width: 600px) {
-      .posts-list .grid .grid-item, #about-us .grid .grid-item {
+      .grid .grid-item {
         width: 100%; } }
-  .posts-list .grid .grid-item--height1, #about-us .grid .grid-item--height1 {
+  .grid .grid-item--height1 {
     max-height: 573px; }
-  .posts-list .grid .grid-item--height2, #about-us .grid .grid-item--height2 {
+  .grid .grid-item--height2 {
     max-height: 364px; }
-  .posts-list .grid .grid-item--height3, #about-us .grid .grid-item--height3 {
+  .grid .grid-item--height3 {
     max-height: 453px; }
-  .posts-list .grid .grid-item--height4, #about-us .grid .grid-item--height4 {
+  .grid .grid-item--height4 {
     max-height: 337px; }
-  .posts-list .grid .grid-item--height5, #about-us .grid .grid-item--height5 {
+  .grid .grid-item--height5 {
     max-height: 514px; }
-  .posts-list .grid .grid-item--height6, #about-us .grid .grid-item--height6 {
+  .grid .grid-item--height6 {
     max-height: 288px; }
-  .posts-list .grid .grid-item--height7, #about-us .grid .grid-item--height7 {
+  .grid .grid-item--height7 {
     max-height: 1026px; }
 
-.posts-list .btn, .posts-list .btn-large, #about-us .btn, #about-us .btn-large {
+.btn, .btn-large {
   box-shadow: none;
   color: #039be5; }
 
-.posts-list .follow-socials, #about-us .follow-socials {
+.follow-socials {
   margin: 30px 0 70px 0; }
-  .posts-list .follow-socials .btn, .posts-list .follow-socials .btn-large, #about-us .follow-socials .btn, #about-us .follow-socials .btn-large {
+  .follow-socials .btn, .follow-socials .btn-large {
     display: block;
     text-align: none;
     height: 72px;
     line-height: 72px; }
     @media only screen and (max-width: 600px) {
-      .posts-list .follow-socials .btn, .posts-list .follow-socials .btn-large, #about-us .follow-socials .btn, #about-us .follow-socials .btn-large {
+      .follow-socials .btn, .follow-socials .btn-large {
         margin-bottom: 20px; } }
-    .posts-list .follow-socials .btn .social-likes, .posts-list .follow-socials .btn-large .social-likes, #about-us .follow-socials .btn .social-likes, #about-us .follow-socials .btn-large .social-likes {
+    .follow-socials .btn .social-likes, .follow-socials .btn-large .social-likes {
       color: white; }
-      .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook, .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter {
+      .follow-socials .btn .social-likes .social-likes__button_facebook, .follow-socials .btn-large .social-likes .social-likes__button_facebook, .follow-socials .btn .social-likes .social-likes__button_twitter, .follow-socials .btn-large .social-likes .social-likes__button_twitter {
         position: relative;
         padding-left: 30px; }
-        .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
+        .follow-socials .btn .social-likes .social-likes__button_facebook:before, .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, .follow-socials .btn .social-likes .social-likes__button_twitter:before, .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
           font-family: FontAwesome;
           font-style: normal;
           font-weight: normal;
@@ -6306,16 +6324,16 @@ nav {
           padding-right: 0.5em;
           position: absolute;
           left: 0; }
-      .posts-list .follow-socials .btn .social-likes .social-likes__button_facebook:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn .social-likes .social-likes__button_facebook:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_facebook:before {
+      .follow-socials .btn .social-likes .social-likes__button_facebook:before, .follow-socials .btn-large .social-likes .social-likes__button_facebook:before {
         content: "\f09a"; }
-      .posts-list .follow-socials .btn .social-likes .social-likes__button_twitter:before, .posts-list .follow-socials .btn-large .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn .social-likes .social-likes__button_twitter:before, #about-us .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
+      .follow-socials .btn .social-likes .social-likes__button_twitter:before, .follow-socials .btn-large .social-likes .social-likes__button_twitter:before {
         content: "\f099"; }
 
-.posts-list .card-action .social-likes .social-likes__button_facebook, .posts-list .card-action .social-likes .social-likes__button_twitter, #about-us .card-action .social-likes .social-likes__button_facebook, #about-us .card-action .social-likes .social-likes__button_twitter {
+.card-action .social-likes .social-likes__button_facebook, .card-action .social-likes .social-likes__button_twitter {
   position: relative;
   padding-left: 30px;
   vertical-align: middle; }
-  .posts-list .card-action .social-likes .social-likes__button_facebook:before, .posts-list .card-action .social-likes .social-likes__button_twitter:before, #about-us .card-action .social-likes .social-likes__button_facebook:before, #about-us .card-action .social-likes .social-likes__button_twitter:before {
+  .card-action .social-likes .social-likes__button_facebook:before, .card-action .social-likes .social-likes__button_twitter:before {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -6325,7 +6343,7 @@ nav {
     position: absolute;
     left: 0; }
 
-.posts-list .card-action .social-likes .social-likes__button_twitter:before, #about-us .card-action .social-likes .social-likes__button_twitter:before {
+.card-action .social-likes .social-likes__button_twitter:before {
   content: "\f099"; }
 
 .most-readed-baner {
@@ -6339,34 +6357,13 @@ nav {
   .most-readed-items .card {
     margin-bottom: 30px; }
 
-.login-content form {
-  margin: 100px 0 180px 0; }
-  @media only screen and (max-width: 600px) {
-    .login-content form {
-      margin: 50px 0 180px 0; } }
-  .login-content form .title-block {
-    color: #8b8b8b;
-    margin: 44px 0 35px 0; }
-  .login-content form .input-field {
-    margin-top: 0; }
-  .login-content form .last-input {
-    margin-bottom: 25px; }
-  .login-content form .btn, .login-content form .btn-large, .login-content form .custom-btn {
-    width: 100%;
-    position: relative;
-    height: 48px;
-    line-height: 48px; }
-    .login-content form .btn i:before, .login-content form .btn-large i:before, .login-content form .custom-btn i:before {
-      position: absolute;
-      right: 25px;
-      top: 0; }
-  .login-content form .custom-btn {
-    text-transform: uppercase;
-    display: block; }
+form .input-field {
+  margin-top: 0; }
 
-@media only screen and (max-width: 992px) {
-  #about-us {
-    margin-bottom: 200px; } }
+form .btn, form .btn-large {
+  position: relative;
+  height: 48px;
+  line-height: 48px; }
 
 #about-us .faqs-block {
   padding: 40px 0;
@@ -6439,8 +6436,6 @@ nav {
         width: 100%; } }
     #about-us .form-background form textarea {
       padding-bottom: 0; }
-    #about-us .form-background form .btn, #about-us .form-background form .btn-large {
-      color: white; }
 
 #blog .grid {
   margin: 0 auto;

@@ -1,12 +1,15 @@
 {% if not user %}
 
     <div class="row">
-      <div class="col l4 offset-l4 m6 offset-m3 s12">
-
-        <h3>Sign in</h3>
+      <div class="col l4 offset-l4 m8 offset-m2 s12 margin-bottom-custom">
+        <div class="col s12">
+          <h5 class="title-block">Sign in</h5>
+        </div>
         {% partial account ~ '::signin' %}
-
-        <h3>Register</h3>
+        
+        <div class="col s12">
+          <h5 class="title-block">Register</h5>
+        </div>
         {% partial account ~ '::register' %}
 
       </div>

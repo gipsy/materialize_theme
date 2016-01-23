@@ -7,7 +7,11 @@ description = "Responsive main navigation"
         <a href="{{ 'home'|page }}" class="brand-logo">IT&T</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right icons-small-device">
-          <li class="hide-on-med-and-down"><a href="{{ 'login'|page }}"><i class="material-icons">perm_identity</i></a></li>
+          <li class="hide-on-med-and-down"><a class="dropdown-button" href="" data-activates="dropdown2"><i class="material-icons">perm_identity</i></a></li>
+            <ul id="dropdown2" class="dropdown-content">
+              <li><a href="{{ 'login'|page }}">Login</a></li>
+              <li><a href="{{ 'home'|page }}">Log out</a></li>
+            </ul>
           {% if user %}
             <li><a href="#" data-request="onLogout">Logout</a></li>
           {% endif %}

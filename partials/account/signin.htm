@@ -1,40 +1,34 @@
-<form
-    data-request="onSignin">
-    <div class="form-group">
-        <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
-        <input
-            name="login"
-            type="text"
-            class="form-control"
-            id="userSigninLogin"
-            placeholder="Enter your {{ loginAttributeLabel|lower }}" />
+<form data-request="onSignin">
+  <div class="input-field col s12 m6 l6">
+    <input id="email" type="email" class="validate">
+    <label for="email">Email</label>
+  </div>
+  <div class="input-field col s12 m6 l6">
+    <input id="password" type="password" class="validate">
+    <label for="password">Password</label>
+  </div>
+  <div class="col s12">
+    <button type="submit" class="btn btn-default custom-margin full-width-btn">Sign in</button>
+  </div>
+  
+  <div class="col s12">
+    <h5 class="title-block custom-padding-lr">Or sign in with</h5>
+  </div>
+ 
+  {% set providerColor = {
+                            'google'  : 'yellow',
+                            'twitter' : 'light-blue darken-1',
+                            'facebook': 'light-blue darken-4'
+                          }
+  %}
+
+  {% for name, link in social_login_links %}
+  <div class="row row-reset-margin">
+    <div class="col s12">
+      <a class="waves-effect waves-light btn custom-margin full-width-btn {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="right fa fa-{{ name|lower }}"></i>{{ name }}</a>
     </div>
-
-    <div class="form-group">
-        <label for="userSigninPassword">Password</label>
-        <input
-            name="password"
-            type="password"
-            class="form-control"
-            id="userSigninPassword"
-            placeholder="Enter your password" />
-    </div>
-
-    <button type="submit" class="btn btn-default">Sign in</button>
-
-    <p>or sign in with</p>
-
-    {% set providerColor = {
-                              'google'  : 'yellow',
-                              'twitter' : 'light-blue darken-1',
-                              'facebook': 'light-blue darken-4'
-                            }
-    %}
-
-    {% for name, link in social_login_links %}
-      <div class="row row-reset-margin">
-        <a class="waves-effect waves-light btn {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="fa fa-{{ name|lower }}"></i>{{ name }}</a>
-      </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 
 </form>
+
