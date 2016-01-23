@@ -5846,6 +5846,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+form {
+  display: inline-block;
+  overflow: hidden; }
+
 .red-lighten-5 {
   background-color: #ffebee; }
 
@@ -5983,7 +5987,7 @@ img {
 .btn, .btn-large {
   color: white !important; }
 
-.full-width-btn {
+.btn-full-width {
   width: 100%; }
 
 .pink-lighten-6 {

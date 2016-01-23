@@ -1,43 +1,50 @@
-<form data-request="onSignin">
-  <div class="row row-reset-margin">
-    <div class="col s12">
-      <h5>Social Login</h5>
+<div class="row">
+  <form data-request="onSignin">
+    <div class="row">
+      <div class="col s12">
+        <h5>Social Login</h5>
+      </div>
     </div>
-  </div>
-  {% set providerColor = {
-                            'google'  : 'yellow',
-                            'twitter' : 'light-blue darken-1',
-                            'facebook': 'light-blue darken-4'
-                          }
-  %}
 
-  {% for name, link in social_login_links %}
-    <div class="col s12">
-      <a class="waves-effect waves-light btn custom-margin full-width-btn {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="right fa fa-{{ name|lower }}"></i>{{ name }}</a>
+    {% set providerColor = {
+                              'google'  : 'yellow',
+                              'twitter' : 'light-blue darken-1',
+                              'facebook': 'light-blue darken-4'
+                            }
+    %}
+
+    {% for name, link in social_login_links %}
+      <div class="row">
+        <div class="col s12">
+          <a class="waves-effect waves-light btn btnfull-width {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="right fa fa-{{ name|lower }}"></i>{{ name }}</a>
+        </div>
+      </div>
+    {% endfor %}
+
+    </br></br></br>
+
+    <div class="row">
+      <div class="col s12">
+        <h5>Email Login</h5>
+      </div>
     </div>
-  {% endfor %}
 
-  </br></br></br>
-
-  <div class="row row-reset-margin">
-    <div class="col s12">
-      <h5>Email Login</h5>
+    <div class="row">
+      <div class="input-field col s12 m6 l6">
+        <input name="login" id="userSigninLogin" type="email" class="validate">
+        <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
+      </div>
+      <div class="input-field col s12 m6 l6">
+        <input name="password" id="userSigninPassword" type="password" class="validate">
+        <label for="userSigninLogin">Password</label>
+      </div>
     </div>
-  </div>
 
-  <div class="input-field col s12 m6 l6">
-    <input name="login" id="userSigninLogin" type="email" class="validate">
-    <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
-  </div>
-  <div class="input-field col s12 m6 l6">
-    <input name="password" id="userSigninPassword" type="password" class="validate">
-    <label for="userSigninLogin">Password</label>
-  </div>
-  <div class="col s12">
-    <button type="submit" class="btn btn-default custom-margin full-width-btn">Sign in</button>
-  </div>
-  <!-- <div class="col s12"> -->
-  <!--   <h5 class="title&#45;block custom&#45;padding&#45;lr">Or sign in with</h5> -->
-  <!-- </div> -->
-</form>
+    <div class="row">
+      <div class="col s12">
+        <button type="submit" class="btn btn-default btn-full-width">Sign in</button>
+      </div>
+    </div>
+  </form>
+</div>
 
