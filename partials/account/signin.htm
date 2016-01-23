@@ -16,7 +16,7 @@
     {% for name, link in social_login_links %}
       <div class="row">
         <div class="col s12">
-          <a class="waves-effect waves-light btn btnfull-width {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="right fa fa-{{ name|lower }}"></i>{{ name }}</a>
+          <a class="waves-effect waves-light btn btn-full-width {{ providerColor[name|lower] }}" href="{{ link }}?s={{ 'home'|page }}&f={{ 'login'|page }}"><i class="right fa fa-{{ name|lower }}"></i>{{ name }}</a>
         </div>
       </div>
     {% endfor %}
