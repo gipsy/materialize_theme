@@ -477,6 +477,7 @@ nav {
             }
         }
         .fixed-action-btn {
+            z-index: 1;
             cursor: pointer;
             ul {
                 top: 40%;
@@ -505,7 +506,10 @@ nav {
                 }
             }
             .blue-social{
-                color: #039be5
+                color: #039be5;
+                &:hover {
+                    color: #0277bd; 
+                }
             }
             .pink-social {
                 color: #f8d5d3;

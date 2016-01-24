@@ -10562,6 +10562,7 @@ nav {
       .card .card-action a span {
         vertical-align: top; }
     .card .card-action .fixed-action-btn {
+      z-index: 1;
       cursor: pointer; }
       .card .card-action .fixed-action-btn ul {
         top: 40%; }
@@ -10582,6 +10583,8 @@ nav {
         bottom: 30px; }
       .card .card-action .socials .blue-social {
         color: #039be5; }
+        .card .card-action .socials .blue-social:hover {
+          color: #0277bd; }
       .card .card-action .socials .pink-social {
         color: #f8d5d3; }
         .card .card-action .socials .pink-social:hover {
