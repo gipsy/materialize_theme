@@ -1,23 +1,36 @@
-<div class="oc-share">
-    <div class="btn-group">
-      <!-- <button class="btn btn&#45;default btn&#45;xs disabled">Share:</button>  -->
+<div class="socials">
+  <a href="#" style="position: absolute; bottom: 13px; right: 30px;"><i class="material-icons pink-social">favorite</i></a>
+  <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; bottom: 13px; right: 17px;">
+    <!-- <button class="btn btn&#45;default btn&#45;xs disabled">Share:</button>  -->
 
+    <a class="reset-margin">
+      <i class="material-icons blue-social">share</i>
+    </a>
+
+    <ul>
       {% if facebook %}
-        <a class="btn btn-default btn-xs" target="_blank" title="On Facebook" href="http://www.facebook.com/sharer.php?u={{url}}">
-          <i class="fa fa-facebook"></i>
-        </a>
+        <li>
+          <a class="btn-floating light-blue darken-4" target="_blank" title="On Facebook" href="http://www.facebook.com/sharer.php?u={{url}}">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
       {% endif %}
 
       {% if twitter %}
-        <a class="btn btn-default btn-xs" target="_blank" title="On Twitter" href="http://twitter.com/share?url={{url}}">
-          <i class="fa fa-twitter"></i>
-        </a>
+        <li>
+          <a class="btn-floating light-blue darken-1" target="_blank" title="On Twitter" href="http://twitter.com/share?url={{url}}">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
       {% endif %}
 
       {% if googleplus %}
-        <a class="btn btn-default btn-xs" target="_blank" title="On Google Plus" href="https://plus.google.com/share?url={{url}}">
-          <i class="fa fa-google-plus"></i>
-        </a>
+        <li>
+          <a class="btn-floating orange" target="_blank" title="On Google Plus" href="https://plus.google.com/share?url={{url}}">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </li>
       {% endif %}
-    </div>
+    </ul>
+  </div>
 </div>
