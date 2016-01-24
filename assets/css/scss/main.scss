@@ -1,17 +1,14 @@
 @import '//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700';
 @import '//fonts.googleapis.com/icon?family=Material+Icons';
-@import 'materialize';
 
+@import 'materialize/color';
+@import 'variables';
+@import 'materialize';
 // Import Modules;
-@import 'modules/forms';
+// @import 'modules/forms';
 
 // COLOR CLASSES
-$blue-lighten-6: #039be6;
-$blue-lighten-7: #68c3ef;
-$blue-lighten-8: #e5ecf6;
-$blue-lighten-9: #f2f2f2;
-$pink-lighten-6: #fef2e6;
-$pink-lighten-7: #f7e9e8;
+
 .red-lighten-5 {
   background-color: #ffebee;
 }
@@ -428,6 +425,11 @@ nav {
         }
     }
 }
+.home-content {
+    .btn-flat {
+        color: #039be5;
+    }
+}
 // C O L L A P S I B L E  S H O W / H I D E  A R R O W S
 .collapsible-header {
     .show-icon {
@@ -493,7 +495,7 @@ nav {
             }
         }
         .btn.modal-trigger {
-            color: #039be5 !important;
+            color: #039be5;
         }
         .socials {
             display: inline-block;
@@ -570,7 +572,6 @@ nav {
 }
 .btn {
     box-shadow: none;
-    color: #039be5;
 }
 .follow-socials {
     margin: 30px 0 70px 0;
@@ -747,6 +748,7 @@ form {
         form {
             width: 60%;
             margin: 0 auto;
+            display: block;
             @media #{$medium-only} {
                 width: 100%;
             }
@@ -755,6 +757,9 @@ form {
             }
             textarea {
                 padding-bottom: 0;
+            }
+            .btn {
+                color: white;
             }
         }
     }

@@ -3,17 +3,13 @@
     <div class="row">
       <div class="col l4 offset-l4 m8 offset-m2 s12 margin-bottom-custom">
         {% partial account ~ '::signin' %}
-
-        <div class="col s12">
-          <h5 class="title-block">Register</h5>
-        </div>
+      
         {% partial account ~ '::register' %}
 
       </div>
-    </div>
 
 {% else %}
-  <div class="row">
+
     <div class="col l4 offset-l4 m6 offset-m3 s12">
 
       {% partial account ~ '::activation_check' %}

@@ -1,5 +1,12 @@
-/*** Colors ***/
+/*** custom Colors ***/
+$blue-lighten-6: #039be6;
+$blue-lighten-7: #68c3ef;
+$blue-lighten-8: #e5ecf6;
+$blue-lighten-9: #f2f2f2;
+$pink-lighten-6: #fef2e6;
+$pink-lighten-7: #f7e9e8;
 
+/*** Colors ***/
 $primary-color: color("materialize-red", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
@@ -8,6 +15,7 @@ $secondary-color: color("teal", "lighten-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
+
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
@@ -62,7 +70,7 @@ $input-border-color: color("grey", "base") !default;
 $input-bg-color: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
-$input-focus-color: $secondary-color !default;
+$input-focus-color: #039be6 !default;
 $label-font-size: .8rem !default;
 $input-disabled-color: rgba(0,0,0, .26) !default;
 $input-disabled-solid-color: #BDBDBD !default;
