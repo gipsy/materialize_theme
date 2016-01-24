@@ -10291,7 +10291,7 @@ img {
   color: #8c8c8c; }
 
 .chip {
-  color: black;
+  color: #565857;
   border-radius: 25px;
   display: inline-block;
   padding: 0 15px;
@@ -10550,6 +10550,10 @@ nav {
       margin: 0; }
     .card .card-head .chips-wrap, .card .head-title .chips-wrap {
       width: 75%; }
+  .card .card-head p {
+    color: #8a8a8a; }
+  .card .card-content h5 a {
+    color: black; }
   .card .card-action {
     border-top: none;
     position: relative; }
@@ -10565,6 +10569,7 @@ nav {
       z-index: 1;
       cursor: pointer; }
       .card .card-action .fixed-action-btn ul {
+        right: 24px;
         top: 40%; }
         .card .card-action .fixed-action-btn ul li {
           margin: 0; }
@@ -10584,7 +10589,7 @@ nav {
       .card .card-action .socials .blue-social {
         color: #039be5; }
         .card .card-action .socials .blue-social:hover {
-          color: #0277bd; }
+          color: #01579b; }
       .card .card-action .socials .pink-social {
         color: #f8d5d3; }
         .card .card-action .socials .pink-social:hover {
