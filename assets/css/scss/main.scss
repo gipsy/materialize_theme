@@ -128,12 +128,15 @@ img { vertical-align: middle; }
     line-height: 24px;
     height: 24px;
     font-size: 0.8rem;
+    img {
+        width: 23px;
+        height: 23px;
+    }
 }
 .title-block {
     color: #8b8b8b;
     margin: 20px 0 20px 0;
 }
-.btn { color: white !important; }
 .btn-full-width { width: 100%; }
 .pink-lighten-6 {
     background-color: $pink-lighten-6;
@@ -196,7 +199,7 @@ nav {
 	background-color: $blue-lighten-6;
 	.dropdown-content.active {
 		top: none !important;
-		/*background-color: $blue-lighten-6;*/
+		background-color: $blue-lighten-6;
 		color: white;
 		li {
 			a {
@@ -265,6 +268,14 @@ nav {
                     position: absolute;
                     right: 0;
                     top: 0;
+                }
+            }
+            .collapsible-body {
+                li a {
+                    &:hover,
+                    &:active {
+                        background-color: $blue-lighten-7;
+                    }
                 }
             }
         }

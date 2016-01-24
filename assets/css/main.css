@@ -8660,13 +8660,13 @@ img {
   line-height: 24px;
   height: 24px;
   font-size: 0.8rem; }
+  .chip img {
+    width: 23px;
+    height: 23px; }
 
 .title-block {
   color: #8b8b8b;
   margin: 20px 0 20px 0; }
-
-.btn, .btn-large {
-  color: white !important; }
 
 .btn-full-width {
   width: 100%; }
@@ -8733,7 +8733,7 @@ nav {
   background-color: #039be6; }
   nav .dropdown-content.active {
     top: none !important;
-    /*background-color: $blue-lighten-6;*/
+    background-color: #039be6;
     color: white; }
     nav .dropdown-content.active li a {
       color: white;
@@ -8776,6 +8776,8 @@ nav {
         position: absolute;
         right: 0;
         top: 0; }
+    nav .side-nav #collapsible .collapsible-body li a:hover, nav .side-nav #collapsible .collapsible-body li a:active {
+      background-color: #68c3ef; }
 
 .page-footer {
   position: fixed;
