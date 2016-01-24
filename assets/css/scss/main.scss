@@ -451,10 +451,11 @@ nav {
     }
     .card-action {
         border-top: none;
+        position: relative;
         h5 {
             margin-top: 0;
         }
-        a{
+        a{  
             color: #039be5 !important;
             margin-right: 10px;
             display: inline-block;
@@ -463,6 +464,7 @@ nav {
             }
         }
         .fixed-action-btn {
+            cursor: pointer;
             ul {
                 top: 40%;
                 li {
@@ -484,10 +486,10 @@ nav {
         }
         .socials {
             display: inline-block;
-            position: relative;
-            width: 20%;
-            .fixed-action-btn ul {
-                bottom: 30px;
+            .fixed-action-btn {
+                ul {
+                    bottom: 30px;
+                }
             }
             .blue-social{
                 color: #039be5

@@ -8908,7 +8908,8 @@ nav {
     .card .card-head .chips-wrap, .card .head-title .chips-wrap {
       width: 75%; }
   .card .card-action {
-    border-top: none; }
+    border-top: none;
+    position: relative; }
     .card .card-action h5 {
       margin-top: 0; }
     .card .card-action a {
@@ -8917,23 +8918,23 @@ nav {
       display: inline-block; }
       .card .card-action a span {
         vertical-align: top; }
-    .card .card-action .fixed-action-btn ul {
-      top: 40%; }
-      .card .card-action .fixed-action-btn ul li {
-        margin: 0; }
-        .card .card-action .fixed-action-btn ul li .btn-floating {
-          width: 30px;
-          height: 30px; }
-          .card .card-action .fixed-action-btn ul li .btn-floating i {
-            font-size: 15px;
-            line-height: 30px;
-            display: block; }
+    .card .card-action .fixed-action-btn {
+      cursor: pointer; }
+      .card .card-action .fixed-action-btn ul {
+        top: 40%; }
+        .card .card-action .fixed-action-btn ul li {
+          margin: 0; }
+          .card .card-action .fixed-action-btn ul li .btn-floating {
+            width: 30px;
+            height: 30px; }
+            .card .card-action .fixed-action-btn ul li .btn-floating i {
+              font-size: 15px;
+              line-height: 30px;
+              display: block; }
     .card .card-action .btn.modal-trigger, .card .card-action .modal-trigger.btn-large {
       color: #039be5 !important; }
     .card .card-action .socials {
-      display: inline-block;
-      position: relative;
-      width: 20%; }
+      display: inline-block; }
       .card .card-action .socials .fixed-action-btn ul {
         bottom: 30px; }
       .card .card-action .socials .blue-social {
