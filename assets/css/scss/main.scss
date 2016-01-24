@@ -118,7 +118,7 @@ img { vertical-align: middle; }
 .reset-margin { margin: 0!important; }
 .head-title { color: #8c8c8c; }
 .chip {
-    color: black;
+    color: #565857;
     border-radius: 25px;
     display: inline-block;
     padding: 0 15px;
@@ -462,6 +462,18 @@ nav {
             width: 75%;
         }
     }
+    .card-head {
+        p {
+            color: #8a8a8a;
+        }
+    }
+    .card-content {
+        h5 {
+            a {
+                color: black;
+            }
+        }
+    }
     .card-action {
         border-top: none;
         position: relative;
@@ -480,6 +492,7 @@ nav {
             z-index: 1;
             cursor: pointer;
             ul {
+                right: 24px;
                 top: 40%;
                 li {
                     margin: 0;
@@ -508,7 +521,7 @@ nav {
             .blue-social{
                 color: #039be5;
                 &:hover {
-                    color: #0277bd; 
+                    color: #01579b; 
                 }
             }
             .pink-social {
