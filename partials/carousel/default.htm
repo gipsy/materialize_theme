@@ -1,0 +1,39 @@
+<div id="carousel-{{ carousel.id }}" class="slider" data-ride="carousel">
+  {#
+  {% if carousel.images|length > 1 %}
+  <ul class="carousel-indicators">
+  {% for i, image in carousel.images %}
+    <li data-target="#carousel-{{ carousel.id }}" data-slide-to="{{ loop.index - 1 }}"{% if loop.first %} class="active"{% endif %}></li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+  #}
+
+  {% if carousel.images|length > 0 %}
+  <ul class="slides" role="listbox">
+    {% for i, image in carousel.images %}
+    <li class="item{% if loop.first %} active{% endif %}">
+      <img src="{{ image.path }}" alt="{{ image.title }}">
+      <div class="caption left-align">
+
+        {% if image.title %}<h3>{{ image.title }}</h3>{% endif %}
+
+        {% if image.description %}<p>{{ image.description }}</p>{% endif %}
+
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if carousel.images|length > 1 %}
+    <a class="left carousel-control" {#href="#carousel-{{ carousel.id }}"#} role="button" data-slide="prev">
+      <span class="mdi-hardware-keyboard-arrow-left" aria-hidden="true"></span>
+      <span class="hide sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" {#href="#carousel-{{ carousel.id }}"#} role="button" data-slide="next">
+      <span class="hide sr-only">Next</span>
+      <span class="mdi-hardware-keyboard-arrow-right" aria-hidden="true"></span>
+    </a>
+  {% endif %}
+</div>

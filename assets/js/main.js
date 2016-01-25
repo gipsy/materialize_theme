@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	$(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
 
-	$('.dropdown-button').dropdown({
+  $('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
       constrain_width: true, // Does not change width of dropdown to that of the activator
@@ -17,6 +17,10 @@ $(document).ready(function() {
   });
 
   $('.slider').slider();
+  // Next slide
+  $('#carousel-1 .carousel-control.left').slider('prev');
+  // Previous slide
+  $('#carousel-1 .carousel-control.right').slider('next');
 
   var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
@@ -60,5 +64,7 @@ $(document).ready(function() {
       ev.preventDefault();
       $(this).removeClass('x onX').val('').change();
   });
+
+
 
 });

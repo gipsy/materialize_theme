@@ -10,45 +10,13 @@ noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "about-us"
 postPage = "post"
+
+[carousel]
+id = 1
 ==
 {% partial "navigation" %}
 <div class="home-content">
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="{{ 'assets/images/slider-img1.jpg'|theme }}">
-        <div class="caption left-align">
-          <h3 class="black-text">The Future of Web, Mobile and Wearable design</h3>
-          <p class="black-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          <a href="#" class="black-text">Read more</a>
-        </div>
-      </li>
-      <li>
-        <img src="{{ 'assets/images/slider-img2.jpg'|theme }}"> <!-- random image -->
-        <div class="caption left-align">
-          <h3 class="black-text">Left Aligned Caption</h3>
-          <p class="black-text">Here's our small slogan.</p>
-          <a href="#" class="black-text">Read more</a>
-        </div>
-      </li>
-      <li>
-        <img src="{{ 'assets/images/slider-img3.jpg'|theme }}"> <!-- random image -->
-        <div class="caption left-align">
-          <h3 class="black-text">Right Aligned Caption</h3>
-          <p class="black-text">Here's our small slogan.</p>
-          <a href="#" class="black-text">Read more</a>
-        </div>
-      </li>
-      <li>
-        <img src="{{ 'assets/images/slider-img4.jpg'|theme }}"> <!-- random image -->
-        <div class="caption left-align">
-          <h3 class="black-text">This is our big Tagline!</h3>
-          <p class="black-text">Here's our small slogan.</p>
-          <a href="#" class="black-text">Read more</a>
-        </div>
-      </li>
-    </ul>
-  </div><!-- end .slider -->
+  {% partial 'carousel/default' %}
   <div class="container">
     <div class="divider divider-reset-margin"></div>
     <h4 class="title-block">Latest Posts</h4>
@@ -136,7 +104,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height3">
           <div class="card hoverable">
@@ -144,7 +112,7 @@ postPage = "post"
               <img src="{{ 'assets/images/post-item2.jpg'|theme }}">
             </div>
             <div class="card-head">
-              <div class="chips-wrap left"> 
+              <div class="chips-wrap left">
                 <div class="chip pink-lighten-6">Storage</div>
                 <div class="chip blue-lighten-8">Travel</div>
               </div>
@@ -171,7 +139,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height5">
           <div class="card hoverable">
@@ -206,7 +174,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height6">
           <div class="card hoverable">
@@ -236,7 +204,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height4">
           <div class="card hoverable">
@@ -268,7 +236,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div> 
+          </div>
         </div><!-- end .grid-item -->
       </div><!-- end .grid -->
       <p class="center-align"><a class="waves-effect waves-teal btn-flat">Load more</a></p>
@@ -288,8 +256,8 @@ postPage = "post"
               </div>
             </a>
           </div>
-        </div>  
-      </div>  
+        </div>
+      </div>
     </div><!-- end .posts-list -->
   </div><!-- end .container -->
   <div class="most-readed-baner"></div>
@@ -328,7 +296,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
             </div>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="col s12 m12 l4">
         <div class="card hoverable">
@@ -363,7 +331,7 @@ postPage = "post"
               </div><!-- end .fixed-action-btn -->
             </div>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="col s12 m12 l4">
         <div class="card hoverable">
@@ -398,7 +366,7 @@ postPage = "post"
               </div><!-- end .fixed-action-btn -->
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   </div><!-- end .most-readed-items -->
@@ -439,7 +407,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div> 
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height2">
           <div class="card hoverable">
@@ -470,7 +438,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height7">
           <div class="card hoverable">
@@ -545,7 +513,7 @@ postPage = "post"
                 </div>
               </a>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height1">
           <div class="card hoverable">
@@ -578,7 +546,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div> 
+          </div>
         </div><!-- end .grid-item -->
         <div class="grid-item grid-item--height2">
           <div class="card hoverable">
@@ -609,7 +577,7 @@ postPage = "post"
                 </div><!-- end .fixed-action-btn -->
               </div>
             </div>
-          </div>  
+          </div>
         </div><!-- end .grid-item -->
       </div><!-- end .grid -->
     </div><!-- end .posts-list -->
