@@ -403,6 +403,7 @@ nav {
 
 // H O M E  S C S S
 .slider {
+    position: relative;
     .indicators {
         bottom: 60px;
         z-index: 100;
@@ -423,12 +424,27 @@ nav {
         li {
             .caption {
                 width: 35%;
+                h3, p {
+                    color: black;
+                }
                 a {
                 text-transform: uppercase;
                 font-weight: bold;
             }
             }
         }
+    }
+    .back-slide-arrow, .forward-slide-arrow {
+        z-index: 2;
+        position: absolute;
+        bottom: 58px;
+        color: #736c01;
+    }
+    .back-slide-arrow {
+        left: 50px;  
+    }
+    .forward-slide-arrow {
+        right: 50px;
     }
 }
 .home-content {

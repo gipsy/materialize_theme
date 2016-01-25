@@ -27,13 +27,13 @@
   {% endif %}
 
   {% if carousel.images|length > 1 %}
-    <a class="left carousel-control" {#href="#carousel-{{ carousel.id }}"#} role="button" data-slide="prev">
-      <span class="mdi-hardware-keyboard-arrow-left" aria-hidden="true"></span>
+    <a class="left carousel-control back-slide-arrow" {#href="#carousel-{{ carousel.id }}"#} role="button" data-slide="prev">
+      <span aria-hidden="true"><i class="material-icons">arrow_back</i></span>
       <span class="hide sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" {#href="#carousel-{{ carousel.id }}"#} role="button" data-slide="next">
+    <a class="right carousel-control forward-slide-arrow" {#href="#carousel-{{ carousel.id }}"#} role="button" data-slide="next">
       <span class="hide sr-only">Next</span>
-      <span class="mdi-hardware-keyboard-arrow-right" aria-hidden="true"></span>
+      <span aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
     </a>
   {% endif %}
 </div>
