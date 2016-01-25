@@ -10291,19 +10291,21 @@ img {
   color: #8c8c8c; }
 
 .chip {
-  color: #565857;
   border-radius: 25px;
   display: inline-block;
   padding: 0 15px;
   line-height: 24px;
-  height: 24px;
-  font-size: 0.8rem; }
+  height: 24px; }
+  .chip a {
+    color: #7e7e80; }
   .chip img {
     width: 23px;
-    height: 23px; }
+    height: 23px;
+    margin-left: -14px; }
 
 .title-block {
   color: #8b8b8b;
+  font-weight: 300;
   margin: 20px 0 20px 0; }
 
 .btn-full-width {
@@ -10486,6 +10488,8 @@ nav {
 
 #modal2 .apps-panel-content {
   margin: 20px 0; }
+  #modal2 .apps-panel-content p {
+    color: #8a8a8a; }
   #modal2 .apps-panel-content .socials {
     display: block;
     margin-top: 20px; }
@@ -10547,13 +10551,19 @@ nav {
     padding: 20px;
     overflow: hidden; }
     .card .card-head p, .card .head-title p {
-      margin: 0; }
+      margin: 0;
+      width: 30%;
+      text-align: right;
+      line-height: 24px; }
     .card .card-head .chips-wrap, .card .head-title .chips-wrap {
-      width: 75%; }
-  .card .card-head p {
-    color: #8a8a8a; }
-  .card .card-content h5 a {
-    color: black; }
+      width: 70%; }
+  .card .card-head p, .card .card-content p, .card .apps-panel-content p {
+    color: #8a8a8a;
+    font-size: 13px; }
+  .card .card-content h5 {
+    color: #222222; }
+    .card .card-content h5 a {
+      color: #222222; }
   .card .card-action {
     border-top: none;
     position: relative; }
@@ -10597,7 +10607,7 @@ nav {
       .card .card-action .socials .pink-social.active {
         color: #f0524f; }
       .card .card-action .socials span {
-        margin-left: 5px; }
+        margin-right: 5px; }
     .card .card-action .btn, .card .card-action .btn-large {
       height: 24px;
       line-height: 24px;

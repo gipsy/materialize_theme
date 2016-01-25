@@ -118,20 +118,23 @@ img { vertical-align: middle; }
 .reset-margin { margin: 0!important; }
 .head-title { color: #8c8c8c; }
 .chip {
-    color: #565857;
     border-radius: 25px;
     display: inline-block;
     padding: 0 15px;
     line-height: 24px;
     height: 24px;
-    font-size: 0.8rem;
+    a {
+        color: #7e7e80;
+    }
     img {
         width: 23px;
         height: 23px;
+        margin-left: -14px;
     }
 }
 .title-block {
     color: #8b8b8b;
+    font-weight: 300;
     margin: 20px 0 20px 0;
 }
 .btn-full-width { width: 100%; }
@@ -364,6 +367,9 @@ nav {
 #modal2 {
     .divider { margin-top: 0; }
     .apps-panel-content {
+        p {
+            color: #8a8a8a;
+        }
         margin: 20px 0;
         .socials {
             display: block;
@@ -457,20 +463,25 @@ nav {
         overflow: hidden;
         p {
             margin: 0;
+            width: 30%;
+            text-align: right;
+            line-height: 24px;
         }
         .chips-wrap {
-            width: 75%;
+            width: 70%;
         }
     }
-    .card-head {
+    .card-head, .card-content, .apps-panel-content {
         p {
             color: #8a8a8a;
+            font-size: 13px;
         }
     }
     .card-content {
         h5 {
+            color: #222222;
             a {
-                color: black;
+                color: #222222;
             }
         }
     }
@@ -534,7 +545,7 @@ nav {
                 color: #f0524f;
             }
             span {
-                margin-left: 5px;
+                margin-right: 5px;
             }
         }
         .btn {
