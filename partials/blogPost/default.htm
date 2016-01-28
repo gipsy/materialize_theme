@@ -1,20 +1,25 @@
+[shares]
+==
 {% set post = blogPost.post %}
 
 <div class="content">{{ post.content_html|raw }}</div>
 
-<!-- {% if post.featured_images.count %} -->
-<!--     <div class="featured&#45;images text&#45;center"> -->
-<!--         {% for image in post.featured_images %} -->
-<!--             <img -->
-<!--                 data&#45;src="{{ image.filename }}" -->
-<!--                 src="{{ image.path }}" -->
-<!--                 alt="{{ image.description }}" -->
-<!--                 style="max&#45;width: 100%" /> -->
-<!--         {% endfor %} -->
-<!--     </div> -->
-<!-- {% endif %} -->
+{#
+{% if post.featured_images.count %}
+    <div class="featured-images text-center">
+        {% for image in post.featured_images %}
+            <img
+                data-src="{{ image.filename }}"
+                src="{{ image.path }}"
+                alt="{{ image.description }}"
+                style="max-width: 100%" />
+        {% endfor %}
+    </div>
+{% endif %}
+#}
 
-<div class="chips-wrap left">
+<div class="l-box">
+  <div class="chips-wrap left">
     {% if post.categories.count %}
         {% for category in post.categories %}
             <div class="chip {{ categoryColor['color' ~ category.id] }}">
@@ -22,8 +27,9 @@
             </div>
         {% endfor %}
     {% endif %}
-    <p class="right">
-        {{ post.published_at|date('M d, Y') }}
-        {% partial 'shares/default' %}
-    </p>
-</p>
+  </div>
+  <p class="right">
+    {{ post.published_at|date('M d, Y') }}
+    {% component 'shares' %}
+  </p>
+</div>
