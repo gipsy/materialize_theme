@@ -10864,3 +10864,6 @@ form .btn, form .btn-large {
     -webkit-border-radius: 50px 50px 0px 50px; }
     .single-post-block .blockquote-wrap blockquote h5 {
       line-height: 85px; }
+
+.single-post-block .action-block {
+  position: relative; }
