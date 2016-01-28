@@ -7,6 +7,26 @@ is_hidden = 0
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "categories"
+
+[carousel]
+id = 2
 ==
-{% partial 'blogPost/default' %}
-test
+{% partial "navigation" %}
+
+{% partial 'carousel/default' %}
+<div class="margin-bottom-custom">
+	<div class="container">
+		<div class="row">
+			<div class="col l9 m9 s12">
+				<div class="single-post-block white col offset-l1 l10 m12 s12">
+					{% partial 'blogPost/default' %}
+				</div>
+			</div><!-- end .single-post-block -->
+        
+			<div class="col l3 m3 s12">fghfhghh
+			</div>
+		</div><!-- end .row -->
+	</div><!-- end .container -->
+</div><!-- end .margin-bottom-custom -->
+
+{% partial "footer" %}

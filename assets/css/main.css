@@ -10290,6 +10290,9 @@ img {
 .head-title {
   color: #8c8c8c; }
 
+.l-box {
+  padding: 20px; }
+
 .chip {
   border-radius: 25px;
   display: inline-block;
@@ -10310,6 +10313,10 @@ img {
 
 .btn-full-width {
   width: 100%; }
+
+.card-head p, .card-content p, .apps-panel-content p, .single-post-block p {
+  color: #8a8a8a !important;
+  font-size: 13px; }
 
 .pink-lighten-6 {
   background-color: #fef2e6; }
@@ -10560,7 +10567,6 @@ nav {
   margin: 0; }
   .card .card-head, .card .head-title {
     border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 20px;
     overflow: hidden; }
     .card .card-head p, .card .head-title p {
       margin: 0;
@@ -10569,9 +10575,6 @@ nav {
       line-height: 24px; }
     .card .card-head .chips-wrap, .card .head-title .chips-wrap {
       width: 70%; }
-  .card .card-head p, .card .card-content p, .card .apps-panel-content p {
-    color: #8a8a8a;
-    font-size: 13px; }
   .card .card-content h5 {
     color: #222222; }
     .card .card-content h5 a {
@@ -10838,3 +10841,26 @@ form .btn, form .btn-large {
     @media only screen and (max-width: 600px) {
       #blog .grid .grid-item {
         width: 100%; } }
+
+.single-post-block h3 {
+  font-weight: 300; }
+
+.single-post-block ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer; }
+
+.single-post-block ul img {
+  width: 100%;
+  height: 100%; }
+
+.single-post-block .blockquote-wrap {
+  display: block; }
+  .single-post-block .blockquote-wrap blockquote {
+    height: 85px;
+    border: none;
+    border-radius: 50px 50px 0px 50px;
+    -moz-border-radius: 50px 50px 0px 50px;
+    -webkit-border-radius: 50px 50px 0px 50px; }
+    .single-post-block .blockquote-wrap blockquote h5 {
+      line-height: 85px; }
