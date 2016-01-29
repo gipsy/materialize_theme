@@ -1,9 +1,31 @@
+        {% set categoryColor = { 'color1'       : 'deep-orange-lighten-5',
+                                    'color2'       : 'pink-lighten-5',
+                                    'color3'       : 'brown-lighten-5',
+                                    'color4'       : 'indigo-lighten-5',
+                                    'color5'       : 'light-blue-lighten-5',
+                                    'color6'       : 'cyan-lighten-5',
+                                    'color7'       : 'teal-lighten-5',
+                                    'color8'       : 'green-lighten-5',
+                                    'color9'       : 'light-green-lighten-5',
+                                    'color10'      : 'lime-lighten-5',
+                                    'color11'      : 'yellow-lighten-5',
+                                    'color12'      : 'amber-lighten-5',
+                                    'color13'      : 'orange-lighten-5',
+                                    'color14'      : 'red-lighten-5',
+                                    'color15'      : 'blue-lighten-5',
+                                    'color16'      : 'blue-grey-lighten-5',
+                                    'color17'      : 'grey-lighten-5',
+                                    'color18'      : 'purple-lighten-5',
+                                    'color19'      : 'deep-purple-lighten-5'
+                                }
+        %}
+
 {% for category in categories %}
     {% set postCount = category.post_count %}
     <li {% if category.slug == currentCategorySlug %}class="active"{% endif %}>
-        <a href="{{ category.url }}">{{ category.name }}</a> 
+      <a class="chip {{ categoryColor['color' ~ category.id] }}" href="{{ category.url }}">{{ category.name }}</a> 
         {% if postCount %}
-            <span class="badge">{{ postCount }}</span>
+        <span class="{{ postCount == 1 ? 'new badge' : 'chip'}}">{{ postCount }}</span>
         {% endif %}
 
         {% if category.children %}

@@ -1,4 +1,4 @@
-=====
+==
 <footer class="page-footer fixed-footer grey darken-4">
   <div class="row custom-row">
     <div class="col l4 m12 s12">
@@ -21,6 +21,7 @@
   </div>
   <a class="btn-floating btn-large waves-effect waves-light btn-scroll blue scrollToTop"><i class="material-icons">keyboard_arrow_up</i></a>
 </footer><!-- end footer -->
+
 <div id="modal2" class="modal bottom-sheet">
   <div class="modal-content white">
     <div class="apps-panel">
@@ -31,7 +32,9 @@
               <div class="head-title">
                 <p>On Twitter</p>
               </div>
+
               <div class="divider"></div>
+
               <div class="apps-panel-content">
                 <div class="card-head reset-border reset-padding-bottom">
                   <div class="chip blue-lighten-8">
@@ -48,7 +51,9 @@
                   <a href="#"><i class="material-icons blue-social">star_rate</i><span>30</span></a>
                 </div>
               </div><!-- end .apps-panel-content -->
+
               <div class="divider"></div>
+
               <div class="apps-panel-content">
                 <div class="card-head reset-border reset-padding-bottom">
                   <div class="chip blue-lighten-8">
@@ -65,13 +70,22 @@
                   <a href="#"><i class="material-icons blue-social">star_rate</i><span>30</span></a>
                 </div>
               </div><!-- end .apps-panel-content -->
+
               <div class="divider"></div>
+
             </div>
             <div class="col l6 m6 s12">
               <div class="head-title">
                 <p>Recent Posts</p>
               </div>
+
               <div class="divider"></div>
+
+              {% for post in posts %}
+                <a href="{{ pust.url }}">{{ post.title }}</a>
+                <p class="right">{{ post.published_at|date('M d, Y') }}</p>
+              {% endfor %}
+
               <div class="apps-panel-content">
                 <h6><strong>Modern Personal Home</strong></h6>
                 <div class="socials">
@@ -79,7 +93,9 @@
                   <p class="right reset-margin">4:09 PM</p>
                 </div>
               </div><!-- end .apps-panel-content -->
+
               <div class="divider"></div>
+
               <div class="apps-panel-content">
                 <h6><strong>Fresh Futom Convertible Chair/Bed</strong></h6>
                 <div class="socials">
@@ -111,7 +127,11 @@
               <div class="head-title">
                 <p>Categories</p>
               </div>
+
               <div class="divider"></div>
+
+              {% partial "blogCategories/default" %}
+
               <div class="apps-panel-content">
                 <div class="chip-item-box">
                   <div class="chip pink-lighten-6">Storage</div>
