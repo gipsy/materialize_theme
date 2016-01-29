@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [shares]
 ==
 {% set post = blogPost.post %}
@@ -33,3 +34,65 @@
   </div>
   {% component 'shares' %}
 </div>
+=======
+[shares]
+==
+{% set post = blogPost.post %}
+
+<div class="content">{{ post.content_html|raw }}</div>
+
+{#
+{% if post.featured_images.count %}
+    <div class="featured-images text-center">
+        {% for image in post.featured_images %}
+            <img
+                data-src="{{ image.filename }}"
+                src="{{ image.path }}"
+                alt="{{ image.description }}"
+                style="max-width: 100%" />
+        {% endfor %}
+    </div>
+{% endif %}
+#}
+
+<div class="l-box">
+  <div class="chips-wrap left">
+    <div class="chip">
+        <img src="{{ member.user.avatarThumb(50) }}" alt="{{ post.member.username }}">
+        {{ member.username }}
+    </div>
+    {% if post.categories.count %}
+        {% set categoryColor = { 'color1'       : 'deep-orange-lighten-5',
+                                    'color2'       : 'pink-lighten-5',
+                                    'color3'       : 'brown-lighten-5',
+                                    'color4'       : 'indigo-lighten-5',
+                                    'color5'       : 'light-blue-lighten-5',
+                                    'color6'       : 'cyan-lighten-5',
+                                    'color7'       : 'teal-lighten-5',
+                                    'color8'       : 'green-lighten-5',
+                                    'color9'       : 'light-green-lighten-5',
+                                    'color10'      : 'lime-lighten-5',
+                                    'color11'      : 'yellow-lighten-5',
+                                    'color12'      : 'amber-lighten-5',
+                                    'color13'      : 'orange-lighten-5',
+                                    'color14'      : 'red-lighten-5',
+                                    'color15'      : 'blue-lighten-5',
+                                    'color16'      : 'blue-grey-lighten-5',
+                                    'color17'      : 'grey-lighten-5',
+                                    'color18'      : 'purple-lighten-5',
+                                    'color19'      : 'deep-purple-lighten-5'
+                                }
+        %}
+        {% for category in post.categories %}
+            <div class="chip {{ categoryColor['color' ~ category.id] }}">
+                <a href="{{ category.url }}">{{ category.name }}</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+  </div>
+  <p class="right">
+    {{ post.published_at|date('M d, Y') }}
+    {% component 'shares' %}
+  </p>
+</div>
+>>>>>>> a57a48f193f4924102c5f3b7e233088e51a1e0d6
