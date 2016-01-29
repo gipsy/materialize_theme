@@ -10321,6 +10321,42 @@ img {
   color: #8a8a8a !important;
   font-size: 13px; }
 
+.card-action {
+  position: relative; }
+  .card-action .socials {
+    display: inline-block; }
+  .card-action .fixed-action-btn {
+    z-index: 1;
+    cursor: pointer; }
+    .card-action .fixed-action-btn ul {
+      right: 24px;
+      top: 40%; }
+      .card-action .fixed-action-btn ul li {
+        margin: 0; }
+        .card-action .fixed-action-btn ul li .btn-floating {
+          width: 30px;
+          height: 30px; }
+          .card-action .fixed-action-btn ul li .btn-floating i {
+            font-size: 15px;
+            line-height: 30px;
+            display: block; }
+  .card-action .btn.modal-trigger, .card-action .modal-trigger.btn-large {
+    color: #039be5; }
+  .card-action .socials .fixed-action-btn ul {
+    bottom: 30px; }
+  .card-action .socials .blue-social {
+    color: #039be5; }
+    .card-action .socials .blue-social:hover {
+      color: #01579b; }
+  .card-action .socials .pink-social {
+    color: #f8d5d3; }
+    .card-action .socials .pink-social:hover {
+      color: #f0524f; }
+  .card-action .socials .pink-social.active {
+    color: #f0524f; }
+  .card-action .socials span {
+    margin-right: 5px; }
+
 .pink-lighten-6 {
   background-color: #fef2e6; }
 
@@ -10583,8 +10619,7 @@ nav {
     .card .card-content h5 a {
       color: #222222; }
   .card .card-action {
-    border-top: none;
-    position: relative; }
+    border-top: none; }
     .card .card-action h5 {
       margin-top: 0; }
     .card .card-action a {
@@ -10593,39 +10628,6 @@ nav {
       display: inline-block; }
       .card .card-action a span {
         vertical-align: top; }
-    .card .card-action .fixed-action-btn {
-      z-index: 1;
-      cursor: pointer; }
-      .card .card-action .fixed-action-btn ul {
-        right: 24px;
-        top: 40%; }
-        .card .card-action .fixed-action-btn ul li {
-          margin: 0; }
-          .card .card-action .fixed-action-btn ul li .btn-floating {
-            width: 30px;
-            height: 30px; }
-            .card .card-action .fixed-action-btn ul li .btn-floating i {
-              font-size: 15px;
-              line-height: 30px;
-              display: block; }
-    .card .card-action .btn.modal-trigger, .card .card-action .modal-trigger.btn-large {
-      color: #039be5; }
-    .card .card-action .socials {
-      display: inline-block; }
-      .card .card-action .socials .fixed-action-btn ul {
-        bottom: 30px; }
-      .card .card-action .socials .blue-social {
-        color: #039be5; }
-        .card .card-action .socials .blue-social:hover {
-          color: #01579b; }
-      .card .card-action .socials .pink-social {
-        color: #f8d5d3; }
-        .card .card-action .socials .pink-social:hover {
-          color: #f0524f; }
-      .card .card-action .socials .pink-social.active {
-        color: #f0524f; }
-      .card .card-action .socials span {
-        margin-right: 5px; }
     .card .card-action .btn, .card .card-action .btn-large {
       height: 24px;
       line-height: 24px;
@@ -10868,5 +10870,9 @@ form .btn, form .btn-large {
     .single-post-block .blockquote-wrap blockquote h5 {
       line-height: 85px; }
 
-.single-post-block .action-block {
+.single-post-block .card-action {
   position: relative; }
+  .single-post-block .card-action .chips-wrap {
+    width: 80%; }
+  .single-post-block .card-action .socials {
+    width: 20%; }

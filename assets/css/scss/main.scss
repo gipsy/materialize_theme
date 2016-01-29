@@ -149,6 +149,60 @@ img { vertical-align: middle; }
         font-size: 13px;
     }
 }
+.card-action {
+   position: relative;
+    .socials {
+        display: inline-block;
+    }
+    .fixed-action-btn {
+        z-index: 1;
+        cursor: pointer;
+        ul {
+            right: 24px;
+            top: 40%;
+            li {
+                margin: 0;
+                .btn-floating {
+                    width: 30px;
+                    height: 30px;
+                    i {
+                        font-size: 15px;
+                        line-height: 30px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .btn.modal-trigger {
+        color: #039be5;
+    }
+    .socials {
+        .fixed-action-btn {
+            ul {
+                bottom: 30px;
+            }
+        }
+        .blue-social{
+            color: #039be5;
+            &:hover {
+                color: #01579b; 
+            }
+        }
+        .pink-social {
+            color: #f8d5d3;
+            &:hover {
+                color: #f0524f;
+            }
+        }
+        .pink-social.active {
+            color: #f0524f;
+        }
+        span {
+            margin-right: 5px;
+        }
+    }
+}
 .pink-lighten-6 {
     background-color: $pink-lighten-6;
 }
@@ -507,7 +561,6 @@ nav {
     }
     .card-action {
         border-top: none;
-        position: relative;
         h5 {
             margin-top: 0;
         }
@@ -517,55 +570,6 @@ nav {
             display: inline-block;
             span {
                 vertical-align: top;
-            }
-        }
-        .fixed-action-btn {
-            z-index: 1;
-            cursor: pointer;
-            ul {
-                right: 24px;
-                top: 40%;
-                li {
-                    margin: 0;
-                    .btn-floating {
-                        width: 30px;
-                        height: 30px;
-                        i {
-                            font-size: 15px;
-                            line-height: 30px;
-                            display: block;
-                        }
-                    }
-                }
-            }
-        }
-        .btn.modal-trigger {
-            color: #039be5;
-        }
-        .socials {
-            display: inline-block;
-            .fixed-action-btn {
-                ul {
-                    bottom: 30px;
-                }
-            }
-            .blue-social{
-                color: #039be5;
-                &:hover {
-                    color: #01579b; 
-                }
-            }
-            .pink-social {
-                color: #f8d5d3;
-                &:hover {
-                    color: #f0524f;
-                }
-            }
-            .pink-social.active {
-                color: #f0524f;
-            }
-            span {
-                margin-right: 5px;
             }
         }
         .btn {
@@ -847,7 +851,7 @@ form {
 }
 // A N D  B L O G  S C S S
 
-// B L O G  P O S T  S C S S
+// B L O G  P O S T  S I N G L E  S C S S
 .single-post-block {
     h3 {
         font-weight: 300;
@@ -876,9 +880,15 @@ form {
             -webkit-border-radius: 50px 50px 0px 50px;
         }
     }
-    .action-block {
+    .card-action {
         position: relative;
+        .chips-wrap {
+            width: 80%;
+        }
+        .socials {
+            width: 20%;
+        }
     }
 }
 
-//A N D  B L O G  P O S T  S C S S
+//A N D  B L O G  P O S T  S I N G L E  S C S S

@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+[shares]
+==
+{% set post = blogPost.post %}
+
+<div class="content l-box">{{ post.content_html|raw }}</div>
+
+{#
+{% if post.featured_images.count %}
+    <div class="featured-images text-center">
+        {% for image in post.featured_images %}
+            <img
+                data-src="{{ image.filename }}"
+                src="{{ image.path }}"
+                alt="{{ image.description }}"
+                style="max-width: 100%" />
+        {% endfor %}
+    </div>
+{% endif %}
+#}
+
+<div class="l-box card-action">
+  <div class="chips-wrap left">
+    {% if post.categories.count %}
+        {% for category in post.categories %}
+            <div class="chip {{ categoryColor['color' ~ category.id] }}">
+                <a href="{{ category.url }}">{{ category.name }}</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <p class="right reset-margin">
+      {{ post.published_at|date('M d, Y') }}
+    </p>
+  </div>
+  {% component 'shares' %}
+</div>
+=======
 [shares]
 ==
 {% set post = blogPost.post %}
@@ -58,3 +95,4 @@
     {% component 'shares' %}
   </p>
 </div>
+>>>>>>> a57a48f193f4924102c5f3b7e233088e51a1e0d6
