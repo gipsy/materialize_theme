@@ -13,7 +13,7 @@ id = 2
 
 [forumEmbedTopic]
 embedCode = ":slug"
-channelSlug = "newchannel"
+channelSlug = "new-chanel"
 memberPage = "login"
 ==
 {% partial "navigation" %}
@@ -23,9 +23,14 @@ memberPage = "login"
 	<div class="container">
 		<div class="row">
 			<div class="col l9 m9 s12">
-				<div class="single-post-block white col offset-l1 l10 m12 s12">
-					{% partial 'blogPost/default' %}
-					<h2>Comments</h2>
+				<div class="single-post-block reset-padding-left-right white col offset-l1 l10 m12 s12">
+					{% partial 'blogPost/default' %}			
+				</div>
+			</div><!-- end .single-post-block -->
+			<div class="col l9 m9 s12">
+				<div class="single-post-block reset-padding-left-right white custom-margin col offset-l1 l10 m12 s12">
+					<h5>2 Comments</h5>
+					<div class="divider"></div>
 					{% component 'forumEmbedTopic' %}
 				</div>
 			</div><!-- end .single-post-block -->
