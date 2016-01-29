@@ -10357,11 +10357,11 @@ img {
   .card-action .socials span {
     margin-right: 5px; }
 
-form input {
-  outline: none !important; }
-
-form input:-webkit-autofill {
-  background-color: transparent !important; }
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover,
+form input:-webkit-autofill:focus,
+form input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s; }
 
 .pink-lighten-6 {
   background-color: #fef2e6; }
@@ -10609,7 +10609,8 @@ nav {
   display: none; }
 
 .card {
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
   .card .card-head, .card .head-title {
     border-bottom: 1px solid rgba(160, 160, 160, 0.2);
     overflow: hidden; }
@@ -10797,17 +10798,17 @@ form .btn, form .btn-large {
 #about-us .card .card-content .circle {
   border: 1px solid #e0e0e0; }
 
-#about-us .card .card-action {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem; }
-  #about-us .card .card-action a {
-    margin-right: 26px; }
-    #about-us .card .card-action a .fa-twitter:hover {
-      color: #039be5; }
-    #about-us .card .card-action a .fa-facebook {
-      color: #704fe6; }
-    #about-us .card .card-action a .fa-instagram {
-      color: #40719a; }
+#about-us .card .card-action a {
+  margin-right: 26px; }
+  #about-us .card .card-action a .fa-twitter:hover {
+    color: #039be5; }
+  #about-us .card .card-action a .fa-facebook {
+    color: #704fe6; }
+  #about-us .card .card-action a .fa-instagram {
+    color: #40719a; }
+
+#about-us .card .custom-border {
+  border-top: 1px solid rgba(160, 160, 160, 0.2) !important; }
 
 #about-us .form-background {
   background: url("../images/about-us-form-img.jpg") no-repeat center;

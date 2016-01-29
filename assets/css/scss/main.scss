@@ -204,8 +204,12 @@ img { vertical-align: middle; }
     }
 }
 form {
-    input {outline: none !important;}
-    input:-webkit-autofill { background-color: transparent !important; }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
 }
 .pink-lighten-6 {
     background-color: $pink-lighten-6;
@@ -542,6 +546,7 @@ nav {
 // B A D G E S , C H I P S  A N D  C A R D S
 .card {
     margin: 0;
+    overflow: hidden;
     .card-head, .head-title {
         border-bottom: 1px solid rgba(160, 160, 160, 0.2);
         overflow: hidden;
@@ -779,8 +784,6 @@ form {
             }
         }
         .card-action {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
             a {
                 margin-right: 26px;
                 .fa-twitter {
@@ -795,6 +798,9 @@ form {
                     color: #40719a;
                 }
             }
+        }
+        .custom-border {
+            border-top: 1px solid rgba(160, 160, 160, 0.2) !important;
         }
     }
     .form-background {
