@@ -10357,6 +10357,12 @@ img {
   .card-action .socials span {
     margin-right: 5px; }
 
+form input {
+  outline: none !important; }
+
+form input:-webkit-autofill {
+  background-color: transparent !important; }
+
 .pink-lighten-6 {
   background-color: #fef2e6; }
 

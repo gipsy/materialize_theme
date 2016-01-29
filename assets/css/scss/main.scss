@@ -203,6 +203,10 @@ img { vertical-align: middle; }
         }
     }
 }
+form {
+    input {outline: none !important;}
+    input:-webkit-autofill { background-color: transparent !important; }
+}
 .pink-lighten-6 {
     background-color: $pink-lighten-6;
 }
