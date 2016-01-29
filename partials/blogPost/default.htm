@@ -20,6 +20,10 @@
 
 <div class="l-box">
   <div class="chips-wrap left">
+    <div class="chip">
+        <img src="{{ member.user.avatarThumb(50) }}" alt="{{ post.member.username }}">
+        {{ member.username }}
+    </div>
     {% if post.categories.count %}
         {% for category in post.categories %}
             <div class="chip {{ categoryColor['color' ~ category.id] }}">
