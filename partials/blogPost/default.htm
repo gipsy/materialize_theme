@@ -2,7 +2,7 @@
 ==
 {% set post = blogPost.post %}
 
-<div class="content">{{ post.content_html|raw }}</div>
+<div class="content l-box">{{ post.content_html|raw }}</div>
 
 {#
 {% if post.featured_images.count %}
@@ -18,7 +18,7 @@
 {% endif %}
 #}
 
-<div class="l-box">
+<div class="card-action l-box">
   <div class="chips-wrap left">
     <div class="chip">
         <img src="{{ member.user.avatarThumb(50) }}" alt="{{ member.username }}">
@@ -52,9 +52,9 @@
             </div>
         {% endfor %}
     {% endif %}
+    <p class="right reset-margin">
+        {{ post.published_at|date('M d, Y') }}
+    </p>
   </div>
-  <p class="right">
-    {{ post.published_at|date('M d, Y') }}
-    {% component 'shares' %}
-  </p>
+  {% component 'shares' %}
 </div>
