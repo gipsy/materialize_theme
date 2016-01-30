@@ -1,3 +1,8 @@
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+==
 {% if blogCategories.categories %}
     <ul class="category-list">
         {% partial blogCategories ~ "::items"

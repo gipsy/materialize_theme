@@ -1,3 +1,5 @@
+[forumTopics]
+topicsPerPage = 20
 ==
 <footer class="page-footer fixed-footer grey darken-4">
   <div class="row custom-row">
@@ -82,15 +84,44 @@
               <div class="divider"></div>
 
               {% for post in posts %}
+                <a href="{{ pust.url }}">{{ post.title }}</a>
+                <p class="right">{{ post.published_at|date('M d, Y') }}</p>
+              {% endfor %}
+
               <div class="apps-panel-content">
                 <h6><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h6>
                 <div class="socials">
                   <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>12</span></a>
+                  <p class="right reset-margin">4:09 PM</p>
+                </div>
+              </div><!-- end .apps-panel-content -->
+
+              <div class="divider"></div>
+
+              <div class="apps-panel-content">
+                <h6><strong>Fresh Futom Convertible Chair/Bed</strong></h6>
+                <div class="socials">
+                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>6</span></a>
+                  <p class="right reset-margin">12.11.2015</p>
+                </div>
+              </div><!-- end .apps-panel-content -->
+              <div class="divider"></div>
+              <div class="apps-panel-content">
+                <h6><strong>Solar Power Is Now Portable And Clear</strong></h6>
+                <div class="socials">
+                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>2</span></a>
+                  <p class="right reset-margin">12.11.2015</p>
+                </div>
+              </div><!-- end .apps-panel-content -->
+              <div class="divider"></div>
+              <div class="apps-panel-content">
+                <h6><strong>New Disel Motor Revealed</strong></h6>
+                <div class="socials">
+                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>45</span></a>
                   <p class="right reset-margin">{{ post.published_at|date('M d, Y') }}</p>
                 </div>
               </div><!-- end .apps-panel-content -->
               <div class="divider"></div>
-              {% endfor %}
             </div>
           </div><!-- end .footer-half -->
           <div class="footer-half reset-padding-left-right col l6 m12 s12">
@@ -100,9 +131,9 @@
               </div>
 
               <div class="divider"></div>
-              
+
               <div class="apps-panel-content">
-              {% partial "blogCategories/default" %}
+                {% partial "blogCategories/default" %}
               </div>
             </div>
             <div class="col l6 m6 s12">
@@ -111,6 +142,13 @@
               </div>
               <div class="divider"></div>
               <div class="apps-panel-content">
+                {% for topic in topics %}
+                  <img src="{{ topic.last_post_member.user.avatarThumb(24) }}">
+                  <a href="{{ topic.last_post_member.url }}">{{ topic.last_post_member.username }}</a>
+                  <small>
+                      posted <a href="{{ topic.url }}?page=last#post-{{ topic.last_post_id }}">{{ topic.last_post_at.diffForHumans }}</a>
+                  </small>
+                {% endfor %}
                 <h6><strong>Modern Personal Home</strong></h6>
                 <div class="card-head custom-margin">
                   <div class="chip blue-lighten-8">

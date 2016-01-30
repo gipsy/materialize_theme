@@ -1,6 +1,5 @@
 [shares]
 ==
-{% set post = blogPost.post %}
 
 <div class="content l-box">{{ post.content_html|raw }}</div>
 
@@ -21,8 +20,8 @@
 <div class="card-action l-box">
   <div class="chips-wrap left">
     <div class="chip">
-        <img src="{{ member.user.avatarThumb(50) }}" alt="{{ member.username }}">
-        {{ member.username }}
+        <img src="{{ post.user.avatarThumb(50) }}" alt="{{ post.user.full_name }}">
+        {{ post.user.full_name }}
     </div>
     {% if post.categories.count %}
         {% set categoryColor = { 'color1'       : 'deep-orange-lighten-5',
