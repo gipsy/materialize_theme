@@ -10540,6 +10540,8 @@ nav {
 
 #modal2 .apps-panel-content {
   margin: 20px 0; }
+  #modal2 .apps-panel-content h6 a {
+    color: black; }
   #modal2 .apps-panel-content p {
     color: #8a8a8a; }
   #modal2 .apps-panel-content .socials {
@@ -10551,9 +10553,9 @@ nav {
         margin-right: 5px; }
       #modal2 .apps-panel-content .socials a span {
         vertical-align: top; }
-  #modal2 .apps-panel-content .chip-item-box {
+  #modal2 .apps-panel-content .category-list li {
     margin: 10px 0; }
-    #modal2 .apps-panel-content .chip-item-box .circle-chip {
+    #modal2 .apps-panel-content .category-list li .circle-chip {
       padding: 0 10px; }
   @media only screen and (max-width: 992px) {
     #modal2 .apps-panel-content .footer-half {

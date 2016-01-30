@@ -25,7 +25,7 @@
     <li {% if category.slug == currentCategorySlug %}class="active"{% endif %}>
       <a class="chip {{ categoryColor['color' ~ category.id] }}" href="{{ category.url }}">{{ category.name }}</a> 
         {% if postCount %}
-        <span class="{{ postCount == 1 ? 'new badge' : 'chip'}}">{{ postCount }}</span>
+        <span class="{{ postCount == 1 ? 'new badge' : 'chip'}} circle-chip right">{{ postCount }}</span>
         {% endif %}
 
         {% if category.children %}

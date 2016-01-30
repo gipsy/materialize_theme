@@ -440,6 +440,11 @@ nav {
 #modal2 {
     .divider { margin-top: 0; }
     .apps-panel-content {
+        h6 {
+            a {
+                color: black;
+            }
+        }
         p {
             color: #8a8a8a;
         }
@@ -457,10 +462,12 @@ nav {
                 }
             }
         }
-        .chip-item-box {
-            margin: 10px 0;
-            .circle-chip {
-                padding: 0 10px;
+        .category-list {
+            li {
+                margin: 10px 0;
+                .circle-chip {
+                    padding: 0 10px;
+                }
             }
         }
         .footer-half {
