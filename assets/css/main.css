@@ -10883,5 +10883,10 @@ form .btn, form .btn-large {
   position: relative; }
   .single-post-block .card-action .chips-wrap {
     width: 80%; }
-  .single-post-block .card-action .socials {
-    width: 20%; }
+
+.single-post-block .forum-post .metadata {
+  padding-left: 25px; }
+
+.single-post-block .forum-post .quote, .single-post-block .forum-post .edit {
+  text-transform: uppercase;
+  margin-right: 15px; }
