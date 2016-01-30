@@ -1,5 +1,5 @@
 [forumTopics]
-topicsPerPage = 20
+topicsPerPage = 10
 ==
 <footer class="page-footer fixed-footer grey darken-4">
   <div class="row custom-row">
@@ -84,44 +84,16 @@ topicsPerPage = 20
               <div class="divider"></div>
 
               {% for post in posts %}
-                <a href="{{ pust.url }}">{{ post.title }}</a>
-                <p class="right">{{ post.published_at|date('M d, Y') }}</p>
+                <div class="apps-panel-content">
+                  <h6><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h6>
+                  <div class="socials">
+                    <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>{{ posts.total }}</span></a>
+                    <p class="right reset-margin">{{ post.published_at|date('M d, Y') }}</p>
+                  </div>
+                </div><!-- end .apps-panel-content -->
+
+                <div class="divider"></div>
               {% endfor %}
-
-              <div class="apps-panel-content">
-                <h6><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h6>
-                <div class="socials">
-                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>12</span></a>
-                  <p class="right reset-margin">4:09 PM</p>
-                </div>
-              </div><!-- end .apps-panel-content -->
-
-              <div class="divider"></div>
-
-              <div class="apps-panel-content">
-                <h6><strong>Fresh Futom Convertible Chair/Bed</strong></h6>
-                <div class="socials">
-                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>6</span></a>
-                  <p class="right reset-margin">12.11.2015</p>
-                </div>
-              </div><!-- end .apps-panel-content -->
-              <div class="divider"></div>
-              <div class="apps-panel-content">
-                <h6><strong>Solar Power Is Now Portable And Clear</strong></h6>
-                <div class="socials">
-                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>2</span></a>
-                  <p class="right reset-margin">12.11.2015</p>
-                </div>
-              </div><!-- end .apps-panel-content -->
-              <div class="divider"></div>
-              <div class="apps-panel-content">
-                <h6><strong>New Disel Motor Revealed</strong></h6>
-                <div class="socials">
-                  <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>45</span></a>
-                  <p class="right reset-margin">{{ post.published_at|date('M d, Y') }}</p>
-                </div>
-              </div><!-- end .apps-panel-content -->
-              <div class="divider"></div>
             </div>
           </div><!-- end .footer-half -->
           <div class="footer-half reset-padding-left-right col l6 m12 s12">
