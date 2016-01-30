@@ -1,22 +1,27 @@
-<a href="{{ post.member.url }}" class="avatar">
+<div class="chip">
+<a href="{{ post.member.url }}" class="">
+    <a href="{{ post.member.url }}" class="author">{{ post.member.username }}</a>
     <img src="{{ post.member.user.avatarThumb(50) }}" alt="{{ post.member.username }}" />
 </a>
-<div class="content">
-    <a href="{{ post.member.url }}" class="author">{{ post.member.username }}</a>
-    <div class="metadata">
-        <div class="date">
-            <a href="#post-{{ post.id }}">{{ post.created_at.diffForHumans }}</a>
-        </div>
-        {% if post.member.is_banned %}
-            <div class="status text-danger">
-                <i class="icon-exclamation"></i> Banned
-            </div>
-        {% elseif post.member.is_moderator %}
-            <div class="status">
-                <i class="icon-star"></i> Moderator
-            </div>
-        {% endif %}
+</div>
+<div class="metadata right card-action">
+    <div class="socials">
+        <a href="#" style="position: absolute; bottom: -7px; left: 0;"><i class="material-icons pink-social">favorite</i></a>
     </div>
+    <div class="date">
+        <a href="#post-{{ post.id }}">{{ post.created_at.diffForHumans }}</a>
+    </div>
+    {% if post.member.is_banned %}
+        <div class="status text-danger">
+            <i class="icon-exclamation"></i> Banned
+        </div>
+    {% elseif post.member.is_moderator %}
+        <div class="status">
+            <i class="icon-star"></i> Moderator
+        </div>
+    {% endif %}
+</div>
+<div class="content">
 
     {% if mode == 'edit' %}
 
@@ -78,13 +83,13 @@
                 <p><small class="text text-muted">Last updated {{ post.updated_at.diffForHumans }}</small></p>
             {% endif %}
         </div>
-        <div class="actions">
+        <div class="">
             {% if topic.canPost %}
                 <a href="javascript:;"
                     class="quote"
                     data-request-data="post: {{ post.id }}"
                     data-quote-button>
-                    Quote
+                    Reply
                 </a>
             {% endif %}
             {% if topic.canPost and post.canEdit and mode != 'edit' and mode != 'delete' %}

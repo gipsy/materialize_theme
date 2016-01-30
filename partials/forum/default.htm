@@ -18,37 +18,35 @@
     {% if topic %}
 
         <!-- <h4>{{ topic.subject }}</h4> -->
+    <div class="l-box">
+        <div class="col-md-3 col-md-push-9">
 
-        <div class="row">
-            <div class="col-md-3 col-md-push-9">
-
-                <div id="topicControlPanel">
-                    {% partial 'forum/controlpanel' %}
-                </div>
-
+            <div id="topicControlPanel">
+                {% partial 'forum/controlpanel' %}
             </div>
-            <div class="col-md-9 col-md-pull-3">
 
-                {% partial 'forum/posts' %}
-
-                <h4>Reply to this discussion</h4>
-                {% if not topic.canPost %}
-                    <p>
-                        You cannot edit posts or make replies:
-                        {% if member.is_banned %}Your account is banned.{% endif %}
-                        {% if topic.is_locked %}This topic is locked.{% endif %}
-                    </p>
-                {% else %}
-                    {% if member %}
-                        {% partial 'forum/postform' %}
-                    {% else %}
-                        <p>You should be logged in before you can post.</p>
-                    {% endif %}
-                {% endif %}
-
-            </div>
         </div>
+        <div class="col-md-9 col-md-pull-3">
 
+            {% partial 'forum/posts' %}
+
+            <h4>Reply to this discussion</h4>
+            {% if not topic.canPost %}
+                <p>
+                    You cannot edit posts or make replies:
+                    {% if member.is_banned %}Your account is banned.{% endif %}
+                    {% if topic.is_locked %}This topic is locked.{% endif %}
+                </p>
+            {% else %}
+                {% if member %}
+                    {% partial 'forum/postform' %}
+                {% else %}
+                    <p>You should be logged in before you can post.</p>
+                {% endif %}
+            {% endif %}
+
+        </div>
+        
     {% elseif channel %}
 
         <h4>Create a new discussion topic</h4>
@@ -59,4 +57,5 @@
         <p>Topic not found</p>
 
     {% endif %}
+    </div>
 </div>

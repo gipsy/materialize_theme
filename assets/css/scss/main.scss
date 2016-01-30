@@ -902,8 +902,14 @@ form {
         .chips-wrap {
             width: 80%;
         }
-        .socials {
-            width: 20%;
+    }
+    .forum-post {
+        .metadata {
+            padding-left: 25px;
+        }
+        .quote, .edit {
+            text-transform: uppercase;
+            margin-right: 15px;
         }
     }
 }
