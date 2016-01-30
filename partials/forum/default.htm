@@ -1,4 +1,8 @@
 <div class="rainlab-forum">
+    <div class="l-box">
+        <h5>{{ posts.total }} Coments</h5>
+    </div>
+    <div class="divider reset-margin"></div>
 
     {% flash %}
         <div class="alert alert-{{ type == 'error' ? 'danger' : type }}">
@@ -13,7 +17,7 @@
 
     {% if topic %}
 
-        <h4>{{ topic.subject }}</h4>
+        <!-- <h4>{{ topic.subject }}</h4> -->
 
         <div class="row">
             <div class="col-md-3 col-md-push-9">
@@ -26,8 +30,6 @@
             <div class="col-md-9 col-md-pull-3">
 
                 {% partial 'forum/posts' %}
-
-                {% partial 'forum/pagination' %}
 
                 <h4>Reply to this discussion</h4>
                 {% if not topic.canPost %}
