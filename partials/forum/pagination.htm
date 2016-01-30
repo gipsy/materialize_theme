@@ -6,8 +6,7 @@
 
 <div class="row forum-pagination {{ paginationEnabled ? "enabled" : "disabled" }}">
     <div class="col-md-8">
-        {#{% partial __SELF__ ~ "::pagination-list" records=posts %}#}
-        {% component "forum/posts" %}
+        {% partial __SELF__ ~ "forum/pagination-list" records=posts %}
     </div>
     <div class="col-md-4 text-right posts-total-summary">
         <p>{{ posts.firstItem }}-{{ posts.lastItem }} of {{ posts.total }}</p>
