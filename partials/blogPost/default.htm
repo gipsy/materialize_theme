@@ -6,9 +6,9 @@ locale = "en_US"
 width = 450
 height = 80
 
-[tags]
-results = 0
-sortOrder = "created_at desc"
+[blogTags]
+results = 5
+direction = "desc"
 ==
 <div class="content l-box">{{ post.content_html|raw }}</div>
 
@@ -67,5 +67,5 @@ sortOrder = "created_at desc"
   {% component 'likeButton' %}
   {% partial 'shares/default' %}
   <div class="divider"></div>
-  {% component 'tags' %}
+  {% component 'blogTags' %}
 </div>
