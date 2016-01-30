@@ -1,16 +1,4 @@
 [shares]
-
-[likeButton]
-layout = "button"
-locale = "en_US"
-width = 450
-height = 80
-
-[likeButton likeButton2]
-layout = "standard"
-locale = "en_US"
-width = 450
-height = 80
 ==
 {#% set posts = __SELF__.posts %#}
 <div class="posts-list">
@@ -70,7 +58,7 @@ height = 80
           </div>
           <div class="card-action">
             <a class="left" href="{{ post.url }}">Read More</a>
-            {% component 'likeButton' %}
+            
             {% partial 'shares/default' %}
           </div>
         </div><!-- end .card -->
