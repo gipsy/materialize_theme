@@ -203,6 +203,14 @@ img { vertical-align: middle; }
         }
     }
 }
+form {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}
 .pink-lighten-6 {
     background-color: $pink-lighten-6;
 }
@@ -432,6 +440,11 @@ nav {
 #modal2 {
     .divider { margin-top: 0; }
     .apps-panel-content {
+        h6 {
+            a {
+                color: black;
+            }
+        }
         p {
             color: #8a8a8a;
         }
@@ -449,10 +462,12 @@ nav {
                 }
             }
         }
-        .chip-item-box {
-            margin: 10px 0;
-            .circle-chip {
-                padding: 0 10px;
+        .category-list {
+            li {
+                margin: 10px 0;
+                .circle-chip {
+                    padding: 0 10px;
+                }
             }
         }
         .footer-half {
@@ -538,6 +553,7 @@ nav {
 // B A D G E S , C H I P S  A N D  C A R D S
 .card {
     margin: 0;
+    overflow: hidden;
     .card-head, .head-title {
         border-bottom: 1px solid rgba(160, 160, 160, 0.2);
         overflow: hidden;
@@ -775,8 +791,6 @@ form {
             }
         }
         .card-action {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
             a {
                 margin-right: 26px;
                 .fa-twitter {
@@ -791,6 +805,9 @@ form {
                     color: #40719a;
                 }
             }
+        }
+        .custom-border {
+            border-top: 1px solid rgba(160, 160, 160, 0.2) !important;
         }
     }
     .form-background {

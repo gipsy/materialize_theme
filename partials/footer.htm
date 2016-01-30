@@ -89,7 +89,7 @@ topicsPerPage = 20
               {% endfor %}
 
               <div class="apps-panel-content">
-                <h6><strong>Modern Personal Home</strong></h6>
+                <h6><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h6>
                 <div class="socials">
                   <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>12</span></a>
                   <p class="right reset-margin">4:09 PM</p>
@@ -118,10 +118,11 @@ topicsPerPage = 20
                 <h6><strong>New Disel Motor Revealed</strong></h6>
                 <div class="socials">
                   <a href="#"><i class="material-icons blue-social">chat_bubble</i><span>45</span></a>
-                  <p class="right reset-margin">4:09 PM</p>
+                  <p class="right reset-margin">{{ post.published_at|date('M d, Y') }}</p>
                 </div>
               </div><!-- end .apps-panel-content -->
               <div class="divider"></div>
+              {% endfor %}
             </div>
           </div><!-- end .footer-half -->
           <div class="footer-half reset-padding-left-right col l6 m12 s12">
@@ -132,26 +133,9 @@ topicsPerPage = 20
 
               <div class="divider"></div>
 
-              {% partial "blogCategories/default" %}
-
               <div class="apps-panel-content">
-                <div class="chip-item-box">
-                  <div class="chip pink-lighten-6">Storage</div>
-                  <div class="chip circle-chip blue-lighten-9 right">12</div>
-                </div>
-                <div class="chip-item-box">
-                  <div class="chip blue-lighten-8">Travel</div>
-                  <div class="chip circle-chip blue-lighten-9 right">23</div>
-                </div>
-                <div class="chip-item-box">
-                  <div class="chip pink-lighten-7">Auto</div>
-                  <div class="chip circle-chip blue-lighten-9 right">34</div>
-                </div>
-                <div class="chip-item-box">
-                  <div class="chip pink-lighten-6">Lifestyle</div>
-                  <div class="chip circle-chip blue-lighten-9 right">18</div>
-                </div>
-              </div><!-- end .apps-panel-content -->
+                {% partial "blogCategories/default" %}
+              </div>
             </div>
             <div class="col l6 m6 s12">
               <div class="head-title">

@@ -1,8 +1,7 @@
 [shares]
 ==
-{#% set post = __SELF__.post %#}
-{% set authorName = post.user.full_name %}
-<div class="content">{{ post.content_html|raw }}</div>
+
+<div class="content l-box">{{ post.content_html|raw }}</div>
 
 {#
 {% if post.featured_images.count %}
@@ -18,11 +17,11 @@
 {% endif %}
 #}
 
-<div class="l-box">
+<div class="card-action l-box">
   <div class="chips-wrap left">
     <div class="chip">
         <img src="{{ post.user.avatarThumb(50) }}" alt="{{ post.user.full_name }}">
-        {{ authorName }}
+        {{ post.user.full_name }}
     </div>
     {% if post.categories.count %}
         {% set categoryColor = { 'color1'       : 'deep-orange-lighten-5',
@@ -52,9 +51,9 @@
             </div>
         {% endfor %}
     {% endif %}
+    <p class="right reset-margin">
+        {{ post.published_at|date('M d, Y') }}
+    </p>
   </div>
-  <p class="right">
-    {{ post.published_at|date('M d, Y') }}
-    {% component 'shares' %}
-  </p>
+  {% component 'shares' %}
 </div>

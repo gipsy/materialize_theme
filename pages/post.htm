@@ -16,22 +16,6 @@ embedCode = ":slug"
 channelSlug = "newchannel"
 memberPage = "login"
 ==
-<?php
-function onEnd() {
-
-    // get the post component
-     $_post= $this->components['blogPost']; 
-    $_post = $_post->post; // post is the alias of my component
-
-    // get the title
-    $_title = $_post->title;
-
-    // update the page title
-    $this->page->title = $_title;
-
-}
-?>
-==
 {% partial "navigation" %}
 
 {% partial 'carousel/default' %}
@@ -45,9 +29,13 @@ function onEnd() {
 			</div><!-- end .single-post-block -->
 			<div class="col l9 m9 s12">
 				<div class="single-post-block reset-padding-left-right white custom-margin col offset-l1 l10 m12 s12">
-					<h5>2 Comments</h5>
-					<div class="divider"></div>
-					{% component 'forumEmbedTopic' %}
+					<div class="l-box">
+					    <h5>2 Comments</h5>
+					</div>
+					<div class="divider divider-reset-margin"></div>
+					<div class="l-box">
+					    {% partial 'forum/default' %}
+					</div>
 				</div>
 			</div><!-- end .single-post-block -->
         
