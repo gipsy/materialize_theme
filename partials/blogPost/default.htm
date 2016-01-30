@@ -1,4 +1,14 @@
 [shares]
+
+[likeButton]
+layout = "standard"
+locale = "en_US"
+width = 450
+height = 80
+
+[tags]
+results = 0
+sortOrder = "created_at desc"
 ==
 <div class="content l-box">{{ post.content_html|raw }}</div>
 
@@ -54,5 +64,8 @@
         {{ post.published_at|date('M d, Y') }}
     </p>
   </div>
-  {% component 'shares' %}
+  {% component 'likeButton' %}
+  {% partial 'shares/default' %}
+  <div class="divider"></div>
+  {% component 'tags' %}
 </div>
