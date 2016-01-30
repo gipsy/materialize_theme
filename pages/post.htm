@@ -16,6 +16,22 @@ embedCode = ":slug"
 channelSlug = "newchannel"
 memberPage = "login"
 ==
+<?php
+function onEnd() {
+
+    // get the post component
+     $_post= $this->components['blogPost']; 
+    $_post = $_post->post; // post is the alias of my component
+
+    // get the title
+    $_title = $_post->title;
+
+    // update the page title
+    $this->page->title = $_title;
+
+}
+?>
+==
 {% partial "navigation" %}
 
 {% partial 'carousel/default' %}

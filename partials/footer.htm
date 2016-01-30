@@ -1,3 +1,5 @@
+[forumTopics]
+topicsPerPage = 20
 ==
 <footer class="page-footer fixed-footer grey darken-4">
   <div class="row custom-row">
@@ -157,6 +159,13 @@
               </div>
               <div class="divider"></div>
               <div class="apps-panel-content">
+                {% for topic in topics %}
+                  <img src="{{ topic.last_post_member.user.avatarThumb(24) }}">
+                  <a href="{{ topic.last_post_member.url }}">{{ topic.last_post_member.username }}</a>
+                  <small>
+                      posted <a href="{{ topic.url }}?page=last#post-{{ topic.last_post_id }}">{{ topic.last_post_at.diffForHumans }}</a>
+                  </small>
+                {% endfor %}
                 <h6><strong>Modern Personal Home</strong></h6>
                 <div class="card-head custom-margin">
                   <div class="chip blue-lighten-8">
