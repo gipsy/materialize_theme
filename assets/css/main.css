@@ -10890,3 +10890,10 @@ form .btn, form .btn-large {
 .single-post-block .forum-post .quote, .single-post-block .forum-post .edit {
   text-transform: uppercase;
   margin-right: 15px; }
+
+.single-post-block .rainlab-forum {
+  position: relative; }
+  .single-post-block .rainlab-forum .custom-mode-edit-btn {
+    position: absolute;
+    bottom: -25px;
+    right: 36px; }
