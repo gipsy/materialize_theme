@@ -1,11 +1,5 @@
 [shares]
 
-[likeButton]
-layout = "standard"
-locale = "en_US"
-width = 450
-height = 80
-
 [blogTags]
 results = 5
 direction = "desc"
@@ -64,7 +58,7 @@ direction = "desc"
         {{ post.published_at|date('M d, Y') }}
     </p>
   </div>
-  {% component 'likeButton' %}
+  
   {% partial 'shares/default' %}
   <div class="divider"></div>
   {% component 'blogTags' %}

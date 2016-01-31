@@ -12,10 +12,6 @@ categoryPage = "category"
 embedCode = ":slug"
 channelSlug = "newchannel"
 memberPage = "login"
-
-[tags]
-results = 0
-sortOrder = "created_at desc"
 ==
 {% partial "navigation" %}
 
@@ -25,7 +21,7 @@ sortOrder = "created_at desc"
 		<div class="row">
 			<div class="col l9 m9 s12">
 				<div class="single-post-block reset-padding-left-right white col offset-l1 l10 m12 s12">
-					{% partial 'blogPost/default' %}			
+					{% partial 'blogPost/default' %}
 				</div>
 			</div><!-- end .single-post-block -->
 			<div class="col l9 m9 s12">
@@ -33,7 +29,6 @@ sortOrder = "created_at desc"
 					    {% partial 'forum/default' %}
 				</div>
 			</div><!-- end .single-post-block -->
-        
 			<div class="col l3 m3 s12">Right Block
 			</div>
 		</div><!-- end .row -->
