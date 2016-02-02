@@ -18,7 +18,7 @@ description = "Responsive main navigation"
           <li class="flip">
             <a href="#"><i class="material-icons">search</i></a>
           </li>
-          <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+          <li><a href="#" data-activates="mobile-demo1" class="button-collapse1"><i class="material-icons">more_vert</i></a></li>
         </ul>
         <ul class="hide-on-med-and-down right nav-on-hover">
           <li class="active"><a href="{{ 'home'|page }}">Home</a></li>
@@ -55,6 +55,37 @@ description = "Responsive main navigation"
             </ul>
           <li><a href="{{ 'blog'|page }}">Blog</a></li>
           <li><a href="{{ 'about-us'|page }}">About</a></li>
+        </ul>
+        <ul class="side-nav white" id="mobile-demo1">
+          <div class="l-box">
+            <!-- <form> -->
+              <!-- <input id="icon_prefix" type="text" class="validate clearable"> -->
+              <!-- <div class="input-field col s12">
+                <i class="material-icons prefix right">search</i>
+                <input id="icon_prefix" type="text" class="validate clearable">
+              </div> -->
+            <!-- </form> -->
+            <div class="head-title">
+              <p>On Twitter</p>
+            </div>
+            <div class="divider divider-reset-margin"></div>
+            <div class="apps-panel-content">
+              <div class="card-head reset-border reset-padding-bottom">
+                <div class="chip blue-lighten-8">
+                  <img src="{{ 'assets/images/chips-img1.png'|theme }}">
+                  Akira
+                </div>
+              </div>
+              <p>I am a very simple card. I am good at containing small <a class="none-text-transform" href="#">bits of information.</a>
+              I am convenient because I require little markup to use effectively.</p>
+              <p>5:34 PM - 4 Jul 2015</p>
+              <div class="socials">
+                <a href="#"><i class="material-icons blue-social">reply</i></a>
+                <a href="#"><i class="material-icons blue-social">thumbs_up_down</i><span>12</span></a>
+                <a href="#"><i class="material-icons blue-social">star_rate</i><span>30</span></a>
+              </div>
+            </div><!-- end .apps-panel-content -->
+          </div>
         </ul>
       </div>
     </div>

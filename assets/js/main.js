@@ -1,5 +1,10 @@
 $(document).ready(function() {
   $(".button-collapse").sideNav();
+  $('.button-collapse1').sideNav({
+    menuWidth: 300, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+  }
+);
 
   $('.dropdown-button').dropdown({
       inDuration: 300,

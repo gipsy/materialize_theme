@@ -10471,6 +10471,32 @@ nav {
     nav .side-nav #collapsible .collapsible-body li a:hover, nav .side-nav #collapsible .collapsible-body li a:active {
       background-color: #68c3ef; }
 
+#mobile-demo1 {
+  line-height: normal; }
+  #mobile-demo1 .apps-panel-content {
+    margin: 20px 0; }
+    #mobile-demo1 .apps-panel-content p {
+      color: #8a8a8a;
+      line-height: 20px; }
+    #mobile-demo1 .apps-panel-content a {
+      color: #039be5;
+      display: inline-block;
+      padding: 0;
+      font-size: 13px;
+      height: 20px;
+      line-height: 20px; }
+      #mobile-demo1 .apps-panel-content a:hover {
+        background-color: transparent; }
+    #mobile-demo1 .apps-panel-content .socials {
+      display: block;
+      margin-top: 20px; }
+      #mobile-demo1 .apps-panel-content .socials a {
+        margin-right: 10px; }
+        #mobile-demo1 .apps-panel-content .socials a i {
+          margin-right: 5px; }
+        #mobile-demo1 .apps-panel-content .socials a span {
+          vertical-align: top; }
+
 .page-footer {
   position: fixed;
   bottom: 0;
@@ -10538,30 +10564,29 @@ nav {
 #modal2 .divider {
   margin-top: 0; }
 
-#modal2 .apps-panel-content {
-  margin: 20px 0; }
-  #modal2 .apps-panel-content h6 a {
-    color: black; }
-  #modal2 .apps-panel-content p {
-    color: #8a8a8a; }
-  #modal2 .apps-panel-content .socials {
-    display: block;
-    margin-top: 20px; }
-    #modal2 .apps-panel-content .socials a {
-      margin-right: 10px; }
-      #modal2 .apps-panel-content .socials a i {
-        margin-right: 5px; }
-      #modal2 .apps-panel-content .socials a span {
-        vertical-align: top; }
-  #modal2 .apps-panel-content .category-list li {
-    margin: 10px 0; }
-    #modal2 .apps-panel-content .category-list li .circle-chip {
-      padding: 0 10px; }
-  @media only screen and (max-width: 992px) {
-    #modal2 .apps-panel-content .footer-half {
-      height: 100%;
-      max-height: 550px;
-      width: 100%; } }
+#modal2 .apps-panel-content h6 a {
+  color: black; }
+
+#modal2 .apps-panel-content .socials {
+  display: block;
+  margin-top: 20px; }
+  #modal2 .apps-panel-content .socials a {
+    margin-right: 10px; }
+    #modal2 .apps-panel-content .socials a i {
+      margin-right: 5px; }
+    #modal2 .apps-panel-content .socials a span {
+      vertical-align: top; }
+
+#modal2 .apps-panel-content .category-list li {
+  margin: 10px 0; }
+  #modal2 .apps-panel-content .category-list li .circle-chip {
+    padding: 0 10px; }
+
+@media only screen and (max-width: 992px) {
+  #modal2 .apps-panel-content .footer-half {
+    height: 100%;
+    max-height: 550px;
+    width: 100%; } }
 
 .slider {
   position: relative; }
