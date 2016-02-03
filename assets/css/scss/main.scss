@@ -114,6 +114,7 @@ img { vertical-align: middle; }
 .custom-margin { margin: 15px 0; }
 .custom-margin-100 { margin-top: 100px !important; }
 .row-reset-margin { margin-left: 0 !important; margin-right: 0 !important; }
+.reset-padding-top-bottom { padding-top: 0 !important; padding-bottom: 0 !important; }
 .reset-padding-left-right { padding-left: 0 !important; padding-right: 0 !important; }
 .reset-padding-left { padding-left: 0 !important; }
 .reset-padding-right { padding-right: 0 !important; }
@@ -381,10 +382,33 @@ nav {
                 margin-right: 10px;
                 i {
                     margin-right: 5px;
+                    line-height: normal;
+                    display: inline-block;
+                    font-size: 24px;
+                    height: 24px;
                 }
                 span {
                     vertical-align: top;
                 }
+            }
+        }
+        h6 {
+            a {
+                color: black;
+            }
+        }
+    }
+    .category-list {
+        li {
+           padding: 0;
+           line-height: normal;
+           margin: 10px 0;
+           &:hover {
+            background-color: none;
+           }
+           .chip {
+            padding: 0 15px;
+            color: #7e7e80;
             }
         }
     }
